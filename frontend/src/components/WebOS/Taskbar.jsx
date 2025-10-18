@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
-import { Folder, FileText, Code, Terminal as TerminalIcon, Palette, Calculator, Music, Video, Image, Gamepad2, Settings, Chrome, Menu, Wifi, Volume2, Battery } from 'lucide-react';
+import { Folder, FileText, Code, Terminal as TerminalIcon, Palette, Calculator, Music, Video, Image, Gamepad2, Settings, Chrome, Menu, Wifi, Volume2, Battery, Calendar as CalendarIcon } from 'lucide-react';
 import { useWebOS } from './WebOSContext';
+import SearchBar from './SearchBar';
 
-const Taskbar = ({ time }) => {
+const Taskbar = ({ time, apps }) => {
   const { windows, openWindow, focusWindow } = useWebOS();
   const [showStartMenu, setShowStartMenu] = useState(false);
+  const [showCalendar, setShowCalendar] = useState(false);
 
   const apps = [
     { id: 'fileManager', name: 'File Manager', icon: Folder, color: 'text-yellow-500' },

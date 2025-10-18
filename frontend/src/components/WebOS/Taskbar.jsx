@@ -86,18 +86,22 @@ const Taskbar = ({ time }) => {
           boxShadow: '0 -2px 20px rgba(0, 0, 0, 0.1)'
         }}
       >
-        {/* Start Button */}
-        <button
-          onClick={() => setShowStartMenu(!showStartMenu)}
-          className={`w-10 h-10 rounded-lg flex items-center justify-center transition-all duration-200 ${
-            showStartMenu ? 'bg-blue-500 text-white' : 'hover:bg-gray-200 text-gray-700'
-          }`}
-        >
-          <Menu className="w-5 h-5" />
-        </button>
+        {/* Centered Taskbar Content */}
+        <div className="flex items-center gap-1">
+          {/* Start Button */}
+          <button
+            onClick={() => setShowStartMenu(!showStartMenu)}
+            className={`w-12 h-12 rounded-lg flex items-center justify-center transition-all duration-200 ${ 
+              showStartMenu ? 'bg-white/80 shadow-sm' : 'hover:bg-white/40 active:bg-white/60'
+            }`}
+          >
+            <Menu className="w-5 h-5 text-gray-800" strokeWidth={2} />
+          </button>
 
-        {/* Pinned Apps */}
-        <div className="flex items-center gap-1 px-2 border-r border-gray-300 mr-2">
+          {/* Divider */}
+          <div className="w-px h-7 bg-gray-400/30 mx-1" />
+
+          {/* Pinned Apps */}
           {pinnedApps.map((app) => {
             const Icon = app.icon;
             const isOpen = windows.some(w => w.appId === app.id);
@@ -105,41 +109,52 @@ const Taskbar = ({ time }) => {
               <button
                 key={app.id}
                 onClick={() => handleAppClick(app)}
-                className={`w-10 h-10 rounded-lg flex items-center justify-center transition-all duration-200 relative ${
-                  isOpen ? 'bg-gray-200' : 'hover:bg-gray-100'
+                className={`w-11 h-11 rounded-lg flex items-center justify-center transition-all duration-200 relative ${
+                  isOpen ? 'bg-white/60' : 'hover:bg-white/40 active:bg-white/60'
                 }`}
               >
-                <Icon className={`w-5 h-5 ${app.color}`} />
-                {isOpen && <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-1 h-1 rounded-full bg-blue-500" />}
+                <Icon className={`w-5 h-5 ${app.color}`} strokeWidth={2} />
+                {isOpen && (
+                  <div className="absolute -bottom-1 left-1/2 -translate-x-1/2 w-1 h-1 rounded-full bg-gray-700" />
+                )}
               </button>
             );
           })}
-        </div>
 
-        {/* Open Windows */}
-        <div className="flex-1 flex items-center gap-1 overflow-x-auto">
-          {windows.filter(w => !w.minimized).map((window) => {
+          {/* Open Windows */}
+          {windows.filter(w => !w.minimized && !pinnedApps.some(p => p.id === w.appId)).map((window) => {
             const Icon = window.icon;
             return (
               <button
                 key={window.id}
                 onClick={() => handleTaskbarItemClick(window)}
-                className="min-w-[150px] max-w-[200px] h-9 px-3 rounded-lg bg-gray-100 hover:bg-gray-200 flex items-center gap-2 transition-all duration-200"
+                className="h-11 px-3 min-w-[140px] max-w-[200px] rounded-lg bg-white/60 hover:bg-white/80 active:bg-white/90 flex items-center gap-2.5 transition-all duration-200"
               >
-                {Icon && <Icon className="w-4 h-4 text-gray-700 flex-shrink-0" />}
-                <span className="text-sm text-gray-800 truncate">{window.title}</span>
+                {Icon && <Icon className="w-4 h-4 text-gray-700 flex-shrink-0" strokeWidth={2} />}
+                <span className="text-[13px] text-gray-800 font-medium truncate">{window.title}</span>
               </button>
             );
           })}
         </div>
 
-        {/* System Tray */}
-        <div className="flex items-center gap-2 px-3 border-l border-gray-300">
-          <Wifi className="w-4 h-4 text-gray-700" />
-          <Volume2 className="w-4 h-4 text-gray-700" />
-          <Battery className="w-4 h-4 text-gray-700" />
-          <div className="text-sm text-gray-800 ml-2 font-medium">
-            {time.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' })}
+        {/* System Tray - Right Side */}
+        <div className="absolute right-3 flex items-center gap-1">
+          <button className="w-9 h-9 rounded-lg hover:bg-white/40 active:bg-white/60 flex items-center justify-center transition-colors">
+            <Wifi className="w-[18px] h-[18px] text-gray-700" strokeWidth={2} />
+          </button>
+          <button className="w-9 h-9 rounded-lg hover:bg-white/40 active:bg-white/60 flex items-center justify-center transition-colors">
+            <Volume2 className="w-[18px] h-[18px] text-gray-700" strokeWidth={2} />
+          </button>
+          <button className="w-9 h-9 rounded-lg hover:bg-white/40 active:bg-white/60 flex items-center justify-center transition-colors">
+            <Battery className="w-[18px] h-[18px] text-gray-700" strokeWidth={2} />
+          </button>
+          <div className="ml-1 px-2">
+            <div className="text-[13px] text-gray-800 font-medium leading-tight">
+              {time.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' })}
+            </div>
+            <div className="text-[10px] text-gray-600 leading-tight">
+              {time.toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}
+            </div>
           </div>
         </div>
       </div>

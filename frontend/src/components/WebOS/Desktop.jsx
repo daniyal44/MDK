@@ -119,11 +119,14 @@ const Desktop = () => {
     <div 
       className="h-screen w-screen overflow-hidden relative"
       style={{
-        backgroundImage: 'linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%)',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center'
+        background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
       }}
+      onContextMenu={handleDesktopRightClick}
+      onClick={() => setContextMenu(null)}
     >
+      {/* Keyboard Shortcuts Handler */}
+      <KeyboardShortcuts apps={apps} />
+
       {/* Desktop Icons */}
       <div className="absolute top-6 left-6 grid grid-cols-1 gap-3 z-0">
         {desktopIcons.map((icon) => {
@@ -132,7 +135,22 @@ const Desktop = () => {
             <button
               key={icon.id}
               onDoubleClick={() => openWindow(icon.id, icon.name, Icon)}
-              className="flex flex-col items-center justify-center w-24 h-24 rounded-md hover:bg-white/10 active:bg-white/20 transition-all duration-150 group cursor-pointer backdrop-blur-sm"
+              onContextMenu={(e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                setContextMenu({
+                  x: e.clientX,
+                  y: e.clientY,
+                  items: [
+                    { 
+                      icon: Icon, 
+                      label: `Open ${icon.name}`, 
+                      onClick: () => openWindow(icon.id, icon.name, Icon)
+                    },
+                  ]
+                });
+              }}
+              className="flex flex-col items-center justify-center w-24 h-24 rounded-md hover:bg-white/10 active:bg-white/20 transition-all duration-150 group cursor-pointer"
             >
               <div className="w-12 h-12 mb-1.5 flex items-center justify-center">
                 <Icon className="w-full h-full text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.3)] group-hover:scale-105 transition-transform" strokeWidth={1.5} />
@@ -155,14 +173,25 @@ const Desktop = () => {
             onMaximize={() => maximizeWindow(window.id)}
             onFocus={() => focusWindow(window.id)}
             isFocused={focusedWindow === window.id}
+            onDragEnd={(position) => handleWindowDragEnd(window.id, position)}
           >
             {AppComponent && <AppComponent windowId={window.id} />}
           </Window>
         );
       })}
 
+      {/* Context Menu */}
+      {contextMenu && (
+        <ContextMenu
+          x={contextMenu.x}
+          y={contextMenu.y}
+          items={contextMenu.items}
+          onClose={() => setContextMenu(null)}
+        />
+      )}
+
       {/* Taskbar */}
-      <Taskbar time={time} />
+      <Taskbar time={time} apps={apps} />
     </div>
   );
 };

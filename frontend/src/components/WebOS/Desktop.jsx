@@ -20,8 +20,11 @@ import ContextMenu from './ContextMenu';
 import KeyboardShortcuts from './KeyboardShortcuts';
 
 const Desktop = () => {
-  const { windows, openWindow, closeWindow, minimizeWindow, maximizeWindow, focusWindow, focusedWindow } = useWebOS();
+  const { windows, openWindow, closeWindow, minimizeWindow, maximizeWindow, focusWindow, focusedWindow, updateWindowPosition } = useWebOS();
+  const { showNotification } = useNotifications();
   const [time, setTime] = useState(new Date());
+  const [contextMenu, setContextMenu] = useState(null);
+  const [snapIndicator, setSnapIndicator] = useState(null);
 
   useEffect(() => {
     const timer = setInterval(() => setTime(new Date()), 1000);
@@ -43,12 +46,74 @@ const Desktop = () => {
     browser: BrowserApp,
   };
 
+  const apps = [
+    { id: 'fileManager', name: 'File Manager', icon: Folder, color: 'text-yellow-500' },
+    { id: 'textEditor', name: 'Text Editor', icon: FileText, color: 'text-blue-500' },
+    { id: 'codeEditor', name: 'Code Editor', icon: Code, color: 'text-green-500' },
+    { id: 'terminal', name: 'Terminal', icon: TerminalIcon, color: 'text-gray-700' },
+    { id: 'paint', name: 'Paint', icon: Palette, color: 'text-pink-500' },
+    { id: 'calculator', name: 'Calculator', icon: Calculator, color: 'text-indigo-500' },
+    { id: 'musicPlayer', name: 'Music Player', icon: Music, color: 'text-purple-500' },
+    { id: 'videoPlayer', name: 'Video Player', icon: Video, color: 'text-red-500' },
+    { id: 'imageViewer', name: 'Image Viewer', icon: Image, color: 'text-teal-500' },
+    { id: 'game', name: 'Snake Game', icon: Gamepad2, color: 'text-orange-500' },
+    { id: 'browser', name: 'Browser', icon: Chrome, color: 'text-cyan-500' },
+    { id: 'settings', name: 'Settings', icon: Settings, color: 'text-gray-600' },
+  ];
+
   const desktopIcons = [
     { id: 'fileManager', name: 'File Manager', icon: Folder },
     { id: 'textEditor', name: 'Text Editor', icon: FileText },
     { id: 'codeEditor', name: 'Code Editor', icon: Code },
     { id: 'terminal', name: 'Terminal', icon: TerminalIcon },
   ];
+
+  const handleDesktopRightClick = (e) => {
+    e.preventDefault();
+    setContextMenu({
+      x: e.clientX,
+      y: e.clientY,
+      items: [
+        { 
+          icon: RefreshCw, 
+          label: 'Refresh', 
+          onClick: () => {
+            showNotification('Desktop refreshed', 'success', 2000);
+          }
+        },
+        { divider: true },
+        { 
+          icon: Layout, 
+          label: 'Display Settings', 
+          onClick: () => openWindow('settings', 'Settings', Settings)
+        },
+      ]
+    });
+  };
+
+  const handleWindowDragEnd = (windowId, position) => {
+    const { x, y } = position;
+    const screenWidth = window.innerWidth;
+    const screenHeight = window.innerHeight;
+
+    // Window snapping
+    if (x <= 10) {
+      // Snap left
+      setSnapIndicator(null);
+      updateWindowPosition(windowId, { x: 0, y: 0 });
+      showNotification('Window snapped to left', 'info', 1500);
+    } else if (x >= screenWidth - 910) {
+      // Snap right
+      setSnapIndicator(null);
+      updateWindowPosition(windowId, { x: screenWidth / 2, y: 0 });
+      showNotification('Window snapped to right', 'info', 1500);
+    } else if (y <= 10) {
+      // Maximize
+      setSnapIndicator(null);
+      maximizeWindow(windowId);
+      showNotification('Window maximized', 'info', 1500);
+    }
+  };
 
   return (
     <div 

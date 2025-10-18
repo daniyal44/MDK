@@ -48,6 +48,9 @@ const Window = ({ window, onClose, onMinimize, onMaximize, onFocus, isFocused, o
     };
 
     const handleMouseUp = () => {
+      if (isDragging && onDragEnd) {
+        onDragEnd(window.position);
+      }
       setIsDragging(false);
       setIsResizing(false);
     };

@@ -8,7 +8,7 @@ const Taskbar = ({ time, apps }) => {
   const [showStartMenu, setShowStartMenu] = useState(false);
   const [showCalendar, setShowCalendar] = useState(false);
 
-  const apps = [
+  const allApps = apps || [
     { id: 'fileManager', name: 'File Manager', icon: Folder, color: 'text-yellow-500' },
     { id: 'textEditor', name: 'Text Editor', icon: FileText, color: 'text-blue-500' },
     { id: 'codeEditor', name: 'Code Editor', icon: Code, color: 'text-green-500' },
@@ -23,7 +23,7 @@ const Taskbar = ({ time, apps }) => {
     { id: 'settings', name: 'Settings', icon: Settings, color: 'text-gray-600' },
   ];
 
-  const pinnedApps = apps.slice(0, 6);
+  const pinnedApps = allApps.slice(0, 6);
 
   const handleAppClick = (app) => {
     openWindow(app.id, app.name, app.icon);

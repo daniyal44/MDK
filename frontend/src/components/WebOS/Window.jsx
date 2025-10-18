@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import { X, Minus, Square, Maximize2 } from 'lucide-react';
 import { useWebOS } from './WebOSContext';
 
-const Window = ({ window, onClose, onMinimize, onMaximize, onFocus, isFocused, children }) => {
+const Window = ({ window, onClose, onMinimize, onMaximize, onFocus, isFocused, onDragEnd, children }) => {
   const { updateWindowPosition, updateWindowSize } = useWebOS();
   const [isDragging, setIsDragging] = useState(false);
   const [isResizing, setIsResizing] = useState(false);

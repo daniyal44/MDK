@@ -77,39 +77,50 @@ const Window = ({ window, onClose, onMinimize, onMaximize, onFocus, isFocused, c
   return (
     <div
       ref={windowRef}
-      className={`absolute rounded-lg overflow-hidden backdrop-blur-xl bg-white/95 shadow-2xl border border-gray-200/50 flex flex-col transition-all duration-200 ${
-        isFocused ? 'ring-2 ring-blue-400/50' : ''
+      className={`absolute rounded-xl overflow-hidden flex flex-col transition-all duration-200 ${
+        isFocused ? 'shadow-[0_20px_70px_rgba(0,0,0,0.3)]' : 'shadow-[0_10px_40px_rgba(0,0,0,0.2)]'
       }`}
-      style={style}
+      style={{
+        ...style,
+        background: 'rgba(255, 255, 255, 0.85)',
+        backdropFilter: 'blur(40px)',
+        WebkitBackdropFilter: 'blur(40px)',
+        border: '1px solid rgba(255, 255, 255, 0.18)'
+      }}
       onClick={onFocus}
     >
       {/* Title Bar */}
       <div
-        className="h-10 bg-gradient-to-r from-gray-50 to-gray-100 border-b border-gray-200 flex items-center justify-between px-3 cursor-move select-none"
+        className="h-11 flex items-center justify-between px-4 cursor-move select-none relative"
+        style={{
+          background: 'rgba(249, 250, 251, 0.8)',
+          backdropFilter: 'blur(10px)',
+          borderBottom: '1px solid rgba(0, 0, 0, 0.05)'
+        }}
         onMouseDown={handleMouseDown}
       >
-        <div className="flex items-center gap-2">
-          {Icon && <Icon className="w-4 h-4 text-gray-700" />}
-          <span className="text-sm font-medium text-gray-800">{window.title}</span>
+        <div className="flex items-center gap-2.5">
+          {Icon && <Icon className="w-4 h-4 text-gray-700" strokeWidth={2} />}
+          <span className="text-[13px] font-medium text-gray-800">{window.title}</span>
         </div>
-        <div className="flex items-center gap-1 window-controls">
+        <div className="flex items-center gap-2 window-controls">
           <button
             onClick={onMinimize}
-            className="w-8 h-8 rounded hover:bg-gray-200 flex items-center justify-center transition-colors"
+            className="w-11 h-9 rounded-md hover:bg-black/5 active:bg-black/10 flex items-center justify-center transition-colors"
           >
-            <Minus className="w-4 h-4 text-gray-700" />
+            <Minus className="w-[15px] h-[15px] text-gray-700" strokeWidth={2} />
           </button>
           <button
             onClick={onMaximize}
-            className="w-8 h-8 rounded hover:bg-gray-200 flex items-center justify-center transition-colors"
+            className="w-11 h-9 rounded-md hover:bg-black/5 active:bg-black/10 flex items-center justify-center transition-colors"
           >
-            {window.maximized ? <Maximize2 className="w-4 h-4 text-gray-700" /> : <Square className="w-4 h-4 text-gray-700" />}
+            {window.maximized ? <Maximize2 className="w-[15px] h-[15px] text-gray-700" strokeWidth={2} /> : <Square className="w-[15px] h-[15px] text-gray-700" strokeWidth={2} />}
           </button>
           <button
             onClick={onClose}
-            className="w-8 h-8 rounded hover:bg-red-500 hover:text-white flex items-center justify-center transition-colors"
+            className="w-11 h-9 rounded-md hover:bg-red-500 hover:text-white active:bg-red-600 flex items-center justify-center transition-colors"
           >
-            <X className="w-4 h-4" />
+            <X className="w-[15px] h-[15px]" strokeWidth={2} />
           </button>
         </div>
       </div>

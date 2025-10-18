@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Monitor, Folder, FileText, Code, Terminal as TerminalIcon, Palette, Calculator, Music, Video, Image, Gamepad2, Settings, Chrome } from 'lucide-react';
+import { Monitor, Folder, FileText, Code, Terminal as TerminalIcon, Palette, Calculator, Music, Video, Image, Gamepad2, Settings, Chrome, RefreshCw, Layout } from 'lucide-react';
 import Taskbar from './Taskbar';
 import Window from './Window';
 import FileManager from './apps/FileManager';
@@ -15,6 +15,9 @@ import SnakeGame from './apps/SnakeGame';
 import SettingsApp from './apps/Settings';
 import BrowserApp from './apps/Browser';
 import { useWebOS } from './WebOSContext';
+import { useNotifications } from './NotificationContext';
+import ContextMenu from './ContextMenu';
+import KeyboardShortcuts from './KeyboardShortcuts';
 
 const Desktop = () => {
   const { windows, openWindow, closeWindow, minimizeWindow, maximizeWindow, focusWindow, focusedWindow } = useWebOS();

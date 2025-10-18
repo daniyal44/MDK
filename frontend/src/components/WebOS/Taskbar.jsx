@@ -41,29 +41,25 @@ const Taskbar = ({ time, apps }) => {
         <div 
           className="absolute bottom-16 left-1/2 -translate-x-1/2 w-[640px] h-[580px] rounded-2xl shadow-[0_8px_32px_rgba(0,0,0,0.3)] overflow-hidden"
           style={{
-            background: 'rgba(243, 244, 246, 0.8)',
-            backdropFilter: 'blur(60px)',
-            WebkitBackdropFilter: 'blur(60px)',
-            border: '1px solid rgba(255, 255, 255, 0.18)'
+            background: 'rgba(255, 255, 255, 0.95)',
+            backdropFilter: 'blur(40px)',
+            WebkitBackdropFilter: 'blur(40px)',
           }}
         >
           <div className="p-8 h-full flex flex-col">
+            {/* Search in Start Menu */}
             <div className="mb-6">
-              <input
-                type="text"
-                placeholder="Search apps, settings, and files..."
-                className="w-full px-4 py-3 rounded-lg border-none focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white/60 backdrop-blur-sm text-sm"
-              />
+              <SearchBar apps={allApps} />
             </div>
-            <h3 className="text-xs font-semibold text-gray-600 uppercase tracking-wide mb-4">Pinned</h3>
+            <h3 className="text-xs font-semibold text-gray-600 uppercase tracking-wide mb-4">All Applications</h3>
             <div className="grid grid-cols-6 gap-3 flex-1 overflow-y-auto">
-              {apps.map((app) => {
+              {allApps.map((app) => {
                 const Icon = app.icon;
                 return (
                   <button
                     key={app.id}
                     onClick={() => handleAppClick(app)}
-                    className="flex flex-col items-center justify-center p-3 rounded-lg hover:bg-white/40 active:bg-white/60 transition-all duration-150 group"
+                    className="flex flex-col items-center justify-center p-3 rounded-lg hover:bg-gray-100 active:bg-gray-200 transition-all duration-150 group"
                   >
                     <div className="w-10 h-10 rounded-lg flex items-center justify-center mb-1.5 group-hover:scale-105 transition-transform">
                       <Icon className={`w-7 h-7 ${app.color}`} strokeWidth={2} />
@@ -72,6 +68,28 @@ const Taskbar = ({ time, apps }) => {
                   </button>
                 );
               })}
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Calendar Dropdown */}
+      {showCalendar && (
+        <div className="absolute bottom-16 right-4 w-80 bg-white rounded-xl shadow-2xl border border-gray-200 p-4">
+          <div className="text-center mb-4">
+            <div className="text-2xl font-bold text-gray-800">
+              {time.toLocaleDateString('en-US', { month: 'long', year: 'numeric' })}
+            </div>
+            <div className="text-4xl font-bold text-blue-600 mt-2">
+              {time.getDate()}
+            </div>
+            <div className="text-sm text-gray-600 mt-1">
+              {time.toLocaleDateString('en-US', { weekday: 'long' })}
+            </div>
+          </div>
+          <div className="border-t border-gray-200 pt-4">
+            <div className="text-2xl font-semibold text-gray-800 text-center">
+              {time.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', second: '2-digit' })}
             </div>
           </div>
         </div>

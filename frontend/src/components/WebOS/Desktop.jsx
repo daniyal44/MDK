@@ -48,19 +48,28 @@ const Desktop = () => {
   ];
 
   return (
-    <div className="h-screen w-screen overflow-hidden bg-gradient-to-br from-blue-400 via-cyan-300 to-teal-400 relative">
+    <div 
+      className="h-screen w-screen overflow-hidden relative"
+      style={{
+        backgroundImage: 'linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center'
+      }}
+    >
       {/* Desktop Icons */}
-      <div className="absolute top-4 left-4 grid grid-cols-1 gap-4 z-0">
+      <div className="absolute top-6 left-6 grid grid-cols-1 gap-3 z-0">
         {desktopIcons.map((icon) => {
           const Icon = icon.icon;
           return (
             <button
               key={icon.id}
               onDoubleClick={() => openWindow(icon.id, icon.name, Icon)}
-              className="flex flex-col items-center justify-center w-20 h-20 rounded-lg hover:bg-white/20 transition-all duration-200 group cursor-pointer"
+              className="flex flex-col items-center justify-center w-24 h-24 rounded-md hover:bg-white/10 active:bg-white/20 transition-all duration-150 group cursor-pointer backdrop-blur-sm"
             >
-              <Icon className="w-10 h-10 text-white drop-shadow-lg group-hover:scale-110 transition-transform" />
-              <span className="text-white text-xs mt-1 drop-shadow text-center font-medium">{icon.name}</span>
+              <div className="w-12 h-12 mb-1.5 flex items-center justify-center">
+                <Icon className="w-full h-full text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.3)] group-hover:scale-105 transition-transform" strokeWidth={1.5} />
+              </div>
+              <span className="text-white text-xs drop-shadow-[0_1px_3px_rgba(0,0,0,0.5)] text-center font-normal leading-tight px-1">{icon.name}</span>
             </button>
           );
         })}

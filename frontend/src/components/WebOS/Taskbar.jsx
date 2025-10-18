@@ -168,14 +168,17 @@ const Taskbar = ({ time, apps }) => {
           <button className="w-9 h-9 rounded-lg hover:bg-white/40 active:bg-white/60 flex items-center justify-center transition-colors">
             <Battery className="w-[18px] h-[18px] text-gray-700" strokeWidth={2} />
           </button>
-          <div className="ml-1 px-2">
+          <button 
+            onClick={() => setShowCalendar(!showCalendar)}
+            className="ml-1 px-2 py-1 rounded-lg hover:bg-white/40 active:bg-white/60 transition-colors"
+          >
             <div className="text-[13px] text-gray-800 font-medium leading-tight">
               {time.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' })}
             </div>
             <div className="text-[10px] text-gray-600 leading-tight">
               {time.toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}
             </div>
-          </div>
+          </button>
         </div>
       </div>
     </>

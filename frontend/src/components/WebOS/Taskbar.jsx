@@ -36,22 +36,37 @@ const Taskbar = ({ time }) => {
     <>
       {/* Start Menu */}
       {showStartMenu && (
-        <div className="absolute bottom-14 left-2 w-[600px] h-[500px] bg-white/95 backdrop-blur-xl rounded-xl shadow-2xl border border-gray-200/50 overflow-hidden animate-in slide-in-from-bottom-4 duration-200">
-          <div className="p-6 h-full flex flex-col">
-            <h2 className="text-2xl font-bold text-gray-800 mb-6">Applications</h2>
-            <div className="grid grid-cols-4 gap-4 flex-1 overflow-y-auto">
+        <div 
+          className="absolute bottom-16 left-1/2 -translate-x-1/2 w-[640px] h-[580px] rounded-2xl shadow-[0_8px_32px_rgba(0,0,0,0.3)] overflow-hidden"
+          style={{
+            background: 'rgba(243, 244, 246, 0.8)',
+            backdropFilter: 'blur(60px)',
+            WebkitBackdropFilter: 'blur(60px)',
+            border: '1px solid rgba(255, 255, 255, 0.18)'
+          }}
+        >
+          <div className="p-8 h-full flex flex-col">
+            <div className="mb-6">
+              <input
+                type="text"
+                placeholder="Search apps, settings, and files..."
+                className="w-full px-4 py-3 rounded-lg border-none focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white/60 backdrop-blur-sm text-sm"
+              />
+            </div>
+            <h3 className="text-xs font-semibold text-gray-600 uppercase tracking-wide mb-4">Pinned</h3>
+            <div className="grid grid-cols-6 gap-3 flex-1 overflow-y-auto">
               {apps.map((app) => {
                 const Icon = app.icon;
                 return (
                   <button
                     key={app.id}
                     onClick={() => handleAppClick(app)}
-                    className="flex flex-col items-center justify-center p-4 rounded-lg hover:bg-gray-100 transition-all duration-200 group"
+                    className="flex flex-col items-center justify-center p-3 rounded-lg hover:bg-white/40 active:bg-white/60 transition-all duration-150 group"
                   >
-                    <div className={`p-3 rounded-lg bg-gray-50 group-hover:scale-110 transition-transform`}>
-                      <Icon className={`w-8 h-8 ${app.color}`} />
+                    <div className="w-10 h-10 rounded-lg flex items-center justify-center mb-1.5 group-hover:scale-105 transition-transform">
+                      <Icon className={`w-7 h-7 ${app.color}`} strokeWidth={2} />
                     </div>
-                    <span className="text-xs text-gray-700 mt-2 text-center font-medium">{app.name}</span>
+                    <span className="text-[10px] text-gray-800 text-center font-medium leading-tight">{app.name}</span>
                   </button>
                 );
               })}
@@ -61,7 +76,16 @@ const Taskbar = ({ time }) => {
       )}
 
       {/* Taskbar */}
-      <div className="absolute bottom-0 left-0 right-0 h-12 bg-white/80 backdrop-blur-xl border-t border-gray-200/50 shadow-lg flex items-center px-2 gap-1 z-50">
+      <div 
+        className="absolute bottom-0 left-0 right-0 h-14 flex items-center justify-center px-2 z-50"
+        style={{
+          background: 'rgba(243, 244, 246, 0.7)',
+          backdropFilter: 'blur(60px)',
+          WebkitBackdropFilter: 'blur(60px)',
+          borderTop: '1px solid rgba(255, 255, 255, 0.18)',
+          boxShadow: '0 -2px 20px rgba(0, 0, 0, 0.1)'
+        }}
+      >
         {/* Start Button */}
         <button
           onClick={() => setShowStartMenu(!showStartMenu)}

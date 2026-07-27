@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 1. On-Page SEO Meta Tags -->
+    <title>Studio Location, Interactive Map & Directions | Muhammad Daniyal</title>
+    <meta name="description"
+        content="Interactive OpenStreetMap route directions, 1-click GPS location finder, and nearby area amenities guide for visiting Muhammad Daniyal Studio in Green Town, Lahore.">
+    <meta name="keywords"
+        content="Muhammad Daniyal Location, Studio Directions Lahore, Green Town Lahore Map, Route Planner, OpenStreetMap, Amenities Near Me, Google Maps Directions, AEO, GEO">
+    <meta name="author" content="Muhammad Daniyal">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <link rel="canonical" href="https://mdkworks.netlify.app/location.html">
+
+    <!-- 2. Technical & International SEO -->
+    <meta name="theme-color" content="#0d1117">
+    <meta name="revisit-after" content="7 days">
+    <meta name="coverage" content="Worldwide">
+    <meta name="distribution" content="Global">
+    <link rel="alternate" hreflang="en" href="https://mdkworks.netlify.app/location.html">
+    <link rel="alternate" hreflang="es" href="https://mdkworks.netlify.app/location.html?lang=es">
+    <link rel="alternate" hreflang="ur" href="https://mdkworks.netlify.app/location.html?lang=ur">
+    <link rel="alternate" hreflang="fr" href="https://mdkworks.netlify.app/location.html?lang=fr">
+    <link rel="alternate" hreflang="de" href="https://mdkworks.netlify.app/location.html?lang=de">
+    <link rel="alternate" hreflang="zh" href="https://mdkworks.netlify.app/location.html?lang=zh">
+    <link rel="alternate" hreflang="x-default" href="https://mdkworks.netlify.app/location.html">
+
+    <!-- 3. Local SEO & Geo Targeting -->
+    <meta name="geo.region" content="PK-PB">
+    <meta name="geo.placename" content="Lahore">
+    <meta name="geo.position" content="31.4335;74.3056">
+    <meta name="ICBM" content="31.4335, 74.3056">
+    <meta property="og:type" content="place">
+    <meta property="og:url" content="https://mdkworks.netlify.app/location.html">
+    <meta property="og:title" content="Studio Location & Route Directions | Muhammad Daniyal">
+    <meta property="og:description" content="Interactive map, route planner, and area amenities guide.">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Poppins:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Leaflet Map CSS & JS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+    <!-- Icons and Styles -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon"
+        href="https://i.postimg.cc/zDFwVm0R/a_3d_render_of_a_sleek_logo_displaying_t_WRu_g5NXRt6KYp_FGOq_b_Lw_16RSYne_RDW8XD5oo3lm_JA.jpg">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <!-- Schema.org JSON-LD Structured Data for LocalBusiness & Breadcrumbs -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Muhammad Daniyal Web Development Studio",
+      "image": "https://i.postimg.cc/5yBQ2pZR/MDK.png",
+      "@id": "https://mdkworks.netlify.app/location.html",
+      "url": "https://mdkworks.netlify.app/location.html",
+      "telephone": "+923230112464",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "House No. 490, Block 5 Sector D2, Green Town",
+        "addressLocality": "Lahore",
+        "addressRegion": "Punjab",
+        "postalCode": "54000",
+        "addressCountry": "PK"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 31.4335,
+        "longitude": 74.3056
+      },
+      "hasMap": "https://maps.google.com/?q=31.4335,74.3056",
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+        "opens": "09:00",
+        "closes": "21:00"
+      }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://mdkworks.netlify.app/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Location",
+          "item": "https://mdkworks.netlify.app/location.html"
+        }
+      ]
+    }
+    </script>
+</head>
+
+<body class="dark-theme">
+
+    <div class="scroll-progress-bar" id="progressBar"></div>
+
+    <header class="header" data-header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">Muhammad <span>Daniyal</span></a>
+            </div>
+
+            <div class="navbar-actions">
+                <select name="language" id="lang" aria-label="Select Language">
+                    <option value="en">EN</option>
+                    <option value="es">ES</option>
+                    <option value="ur">UR</option>
+                </select>
+
+                <button class="theme-btn" aria-label="Change Theme" title="Change Theme" data-theme-btn><span
+                        class="icon"></span></button>
+            </div>
+
+            <button class="nav-toggle-btn" aria-label="Toggle Menu" title="Toggle Menu" data-nav-toggle-btn>
+                <span class="one"></span>
+                <span class="two"></span>
+                <span class="three"></span>
+            </button>
+
+            <nav class="navbar" data-navbar>
+                <ul class="navbar-list">
+                    <li><a href="index.html" class="navbar-link" data-i18n="nav_home">Home</a></li>
+                    <li><a href="about.html" class="navbar-link" data-i18n="nav_about">About</a></li>
+                    <li><a href="skills.html" class="navbar-link" data-i18n="nav_skills">Skills</a></li>
+                    <li><a href="portfolio.html" class="navbar-link" data-i18n="nav_portfolio">Portfolio</a></li>
+                    <li><a href="location.html" class="navbar-link active" data-i18n="nav_location">Location</a></li>
+                    <li><a href="contact.html" class="navbar-link" data-i18n="nav_contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="top">
+        <article class="container">
+
+            <!-- Location, Directions & Nearby Amenities Section -->
+            <section class="location-section" id="location" style="padding-top: 140px;">
+                <div class="location-header section-content" data-reveal="bottom">
+                    <p class="section-subtitle" data-i18n="location_subtitle">Visit Us & Explore</p>
+                    <h1 class="h2 section-title" data-i18n="location_title">Directions & Nearby Area Amenities</h1>
+                    <p class="section-text" data-i18n="location_text">Plan your visit effortlessly with interactive turn-by-turn directions, or explore surrounding cafes, transit spots, banks, and parking hubs near our studio in Green Town, Lahore.</p>
+                </div>
+
+                <div class="location-grid">
+                    <!-- Directions & Route Planner Box -->
+                    <div class="directions-card" data-reveal="left">
+                        <div class="card-header-badge">
+                            <i class="ri-compass-3-line"></i>
+                            <span data-i18n="directions_badge">Interactive Route Planner</span>
+                        </div>
+                        <h3 class="h3 card-title" data-i18n="directions_heading">Get Directions</h3>
+                        <p class="card-desc" data-i18n="directions_subheading">Enter your starting location or click GPS to calculate route to our Lahore studio.</p>
+                        
+                        <form id="directionsForm" class="directions-form" onsubmit="return false;">
+                            <div class="input-wrapper search-box">
+                                <input type="text" id="originAddress" class="input-field" placeholder="Enter starting city/address (e.g. Gulberg, Lahore)" autocomplete="off">
+                                <button type="button" id="useGpsBtn" class="gps-btn" title="Use current GPS location" aria-label="Use current location">
+                                    <i class="ri-crosshair-2-line"></i> <span data-i18n="gps_btn">GPS</span>
+                                </button>
+                            </div>
+                            
+                            <div class="mode-selector">
+                                <button type="button" class="mode-btn active" data-mode="driving"><i class="ri-car-fill"></i> <span data-i18n="mode_driving">Drive</span></button>
+                                <button type="button" class="mode-btn" data-mode="walking"><i class="ri-walk-fill"></i> <span data-i18n="mode_walking">Walk</span></button>
+                                <button type="button" class="mode-btn" data-mode="transit"><i class="ri-bus-fill"></i> <span data-i18n="mode_transit">Transit</span></button>
+                            </div>
+
+                            <button type="button" id="calcRouteBtn" class="btn btn-primary w-100">
+                                <i class="ri-navigation-line"></i> <span data-i18n="directions_calc_btn">Calculate Directions</span>
+                            </button>
+                        </form>
+
+                        <!-- Route Result Output -->
+                        <div id="routeResults" class="route-results hidden">
+                            <div class="route-summary">
+                                <div class="summary-item">
+                                    <span class="label" data-i18n="route_dist">Distance</span>
+                                    <strong id="routeDist" class="val">-- km</strong>
+                                </div>
+                                <div class="summary-item">
+                                    <span class="label" data-i18n="route_time">Est. Time</span>
+                                    <strong id="routeTime" class="val">-- mins</strong>
+                                </div>
+                            </div>
+                            <div id="routeSteps" class="route-steps"></div>
+                        </div>
+
+                        <!-- Mobile Quick Nav Apps -->
+                        <div class="external-nav-links">
+                            <span class="nav-label" data-i18n="nav_app_open">Launch in GPS App:</span>
+                            <div class="nav-btn-group">
+                                <a href="https://maps.google.com/?q=House+490+Block+5+Green+Town+Lahore+Pakistan" target="_blank" rel="noopener" class="app-nav-btn google"><i class="ri-google-fill"></i> Google Maps</a>
+                                <a href="https://waze.com/ul?q=Green+Town+Lahore" target="_blank" rel="noopener" class="app-nav-btn waze"><i class="ri-navigation-fill"></i> Waze</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Interactive Map & Amenities Box -->
+                    <div class="map-container-wrapper" data-reveal="right">
+                        <!-- Amenity Category Filters -->
+                        <div class="amenity-tabs" id="amenityTabs">
+                            <button class="amenity-tab active" data-category="all"><i class="ri-apps-2-line"></i> <span data-i18n="cat_all">All</span></button>
+                            <button class="amenity-tab" data-category="food"><i class="ri-restaurant-2-line"></i> <span data-i18n="cat_food">Dining</span></button>
+                            <button class="amenity-tab" data-category="transit"><i class="ri-bus-2-line"></i> <span data-i18n="cat_transit">Transit</span></button>
+                            <button class="amenity-tab" data-category="bank"><i class="ri-bank-card-line"></i> <span data-i18n="cat_bank">Banks</span></button>
+                            <button class="amenity-tab" data-category="service"><i class="ri-parking-box-line"></i> <span data-i18n="cat_parking">Parking</span></button>
+                        </div>
+
+                        <!-- Leaflet Map Canvas -->
+                        <div id="interactiveMap" class="interactive-map"></div>
+
+                        <!-- Interactive Amenity Cards List -->
+                        <div class="amenity-cards-scroller" id="amenityCardsList">
+                            <!-- Populated dynamically via JS -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- AEO & GEO Location Summary Box -->
+            <section class="aeo-answer-block" data-reveal="bottom">
+                <span class="aeo-badge"><i class="ri-map-pin-user-fill"></i> Geo-Location Knowledge Graph</span>
+                <h2 class="aeo-title">Studio Location & Geographical Coordinates</h2>
+                <p class="aeo-summary">
+                    <strong>Muhammad Daniyal Web Studio</strong> is located at House No. 490, Block 5 Sector D2, Green Town, Lahore, Punjab 54000, Pakistan. Geographic Coordinates: Latitude 31.4335 N, Longitude 74.3056 E. Global clients can schedule video consultations or on-site project reviews.
+                </p>
+            </section>
+
+        </article>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">Muhammad <span>Daniyal</span></a>
+            </div>
+
+            <p class="copyright">
+                &copy; 2026 <a href="index.html">Muhammad Daniyal</a>. <span data-i18n="footer_text">All rights reserved</span>
+            </p>
+        </div>
+    </footer>
+
+    <a href="#top" class="go-top" data-go-top title="Go to Top" aria-label="Scroll back to top"><i
+            class="ri-arrow-up-line"></i></a>
+
+    <script src="main.js" defer></script>
+</body>
+
+</html>
+

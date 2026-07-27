@@ -1,0 +1,64 @@
+# Global Search & AI Crawler Rules
+User-agent: *
+Allow: /
+Disallow: /scratch/
+Disallow: /tmp/
+
+# Generative Engine Optimization (GEO) - Explicit Access for AI Search Engines & Bots
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: Meta-ExternalFetcher
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+# Host and Sitemap details for global search engines & AI knowledge graphs
+Host: https://mdkworks.netlify.app
+Sitemap: https://mdkworks.netlify.app/sitemap.xml

@@ -2,9 +2,10 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <!-- 1. Home Page -->
   <url>
     <loc>https://mdkworks.netlify.app/</loc>
-    <lastmod>2026-07-27</lastmod>
+    <lastmod>2026-07-31</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://mdkworks.netlify.app/"/>
@@ -16,15 +17,22 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mdkworks.netlify.app/"/>
     <image:image>
       <image:loc>https://i.postimg.cc/5yBQ2pZR/MDK.png</image:loc>
-      <image:title>Muhammad Daniyal Senior Full Stack Web Developer Portfolio</image:title>
-      <image:caption>Creative Senior Full Stack Web Developer &amp; UI/UX Designer - Muhammad Daniyal</image:caption>
+      <image:title>Muhammad Daniyal - Senior Full Stack Web Developer &amp; UI/UX Designer</image:title>
+      <image:caption>Creative Senior Full Stack Web Developer, React SaaS Engineer &amp; UI/UX Designer Portfolio - Muhammad Daniyal</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://i.postimg.cc/zDFwVm0R/a_3d_render_of_a_sleek_logo_displaying_t_WRu_g5NXRt6KYp_FGOq_b_Lw_16RSYne_RDW8XD5oo3lm_JA.jpg</image:loc>
+      <image:title>MDK Works Studio 3D Branding Logo</image:title>
+      <image:caption>Official MDK Works Studio Logo Icon</image:caption>
     </image:image>
   </url>
+
+  <!-- 2. About Page -->
   <url>
     <loc>https://mdkworks.netlify.app/about.html</loc>
-    <lastmod>2026-07-27</lastmod>
+    <lastmod>2026-07-31</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.95</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://mdkworks.netlify.app/about.html"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://mdkworks.netlify.app/about.html?lang=es"/>
     <xhtml:link rel="alternate" hreflang="ur" href="https://mdkworks.netlify.app/about.html?lang=ur"/>
@@ -34,15 +42,17 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mdkworks.netlify.app/about.html"/>
     <image:image>
       <image:loc>https://i.postimg.cc/vBkwZ6W2/Generated-Image-December-11-2025-11-08PM.png</image:loc>
-      <image:title>About Muhammad Daniyal Software Engineer</image:title>
-      <image:caption>Muhammad Daniyal 12+ Years Software Engineering Experience</image:caption>
+      <image:title>Muhammad Daniyal Software Engineer Profile Portrait</image:title>
+      <image:caption>Muhammad Daniyal - 12+ Years Experience Senior Software Engineer &amp; Tech Lead</image:caption>
     </image:image>
   </url>
+
+  <!-- 3. Skills Page -->
   <url>
     <loc>https://mdkworks.netlify.app/skills.html</loc>
-    <lastmod>2026-07-27</lastmod>
+    <lastmod>2026-07-31</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.90</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://mdkworks.netlify.app/skills.html"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://mdkworks.netlify.app/skills.html?lang=es"/>
     <xhtml:link rel="alternate" hreflang="ur" href="https://mdkworks.netlify.app/skills.html?lang=ur"/>
@@ -51,10 +61,12 @@
     <xhtml:link rel="alternate" hreflang="zh" href="https://mdkworks.netlify.app/skills.html?lang=zh"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mdkworks.netlify.app/skills.html"/>
   </url>
+
+  <!-- 4. Portfolio Page -->
   <url>
     <loc>https://mdkworks.netlify.app/portfolio.html</loc>
-    <lastmod>2026-07-27</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-07-31</lastmod>
+    <changefreq>daily</changefreq>
     <priority>0.95</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://mdkworks.netlify.app/portfolio.html"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://mdkworks.netlify.app/portfolio.html?lang=es"/>
@@ -63,10 +75,17 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://mdkworks.netlify.app/portfolio.html?lang=de"/>
     <xhtml:link rel="alternate" hreflang="zh" href="https://mdkworks.netlify.app/portfolio.html?lang=zh"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mdkworks.netlify.app/portfolio.html"/>
+    <image:image>
+      <image:loc>https://mdkworks.netlify.app/zyphuel_preview.jpg</image:loc>
+      <image:title>Zyphuel AI Studio Web Application Case Study</image:title>
+      <image:caption>Zyphuel AI Studio SaaS Platform Designed &amp; Developed by Muhammad Daniyal</image:caption>
+    </image:image>
   </url>
+
+  <!-- 5. Location & GBP Page -->
   <url>
     <loc>https://mdkworks.netlify.app/location.html</loc>
-    <lastmod>2026-07-27</lastmod>
+    <lastmod>2026-07-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://mdkworks.netlify.app/location.html"/>
@@ -77,11 +96,13 @@
     <xhtml:link rel="alternate" hreflang="zh" href="https://mdkworks.netlify.app/location.html?lang=zh"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mdkworks.netlify.app/location.html"/>
   </url>
+
+  <!-- 6. Contact Page -->
   <url>
     <loc>https://mdkworks.netlify.app/contact.html</loc>
-    <lastmod>2026-07-27</lastmod>
+    <lastmod>2026-07-31</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.90</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://mdkworks.netlify.app/contact.html"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://mdkworks.netlify.app/contact.html?lang=es"/>
     <xhtml:link rel="alternate" hreflang="ur" href="https://mdkworks.netlify.app/contact.html?lang=ur"/>
@@ -90,16 +111,18 @@
     <xhtml:link rel="alternate" hreflang="zh" href="https://mdkworks.netlify.app/contact.html?lang=zh"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mdkworks.netlify.app/contact.html"/>
   </url>
+
+  <!-- 7. Downloadable Assets -->
   <url>
     <loc>https://mdkworks.netlify.app/MDK.pdf</loc>
-    <lastmod>2026-07-27</lastmod>
+    <lastmod>2026-07-31</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.85</priority>
   </url>
   <url>
     <loc>https://mdkworks.netlify.app/MDK.apk</loc>
-    <lastmod>2026-07-27</lastmod>
+    <lastmod>2026-07-31</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.85</priority>
   </url>
 </urlset>

@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <meta name="google-site-verification" content="qJrxCPL2ax_70QB7Ziqh5XjSm-TwX25T9hOJuYGWUc8" />
+
     <!-- 1. On-Page SEO Meta Tags -->
     <title>Studio Location, Interactive Map & Directions | Muhammad Daniyal</title>
     <meta name="description"
@@ -17,6 +19,7 @@
 
     <!-- 2. Technical & International SEO -->
     <meta name="theme-color" content="#0d1117">
+    <link rel="manifest" href="site.webmanifest">
     <meta name="revisit-after" content="7 days">
     <meta name="coverage" content="Worldwide">
     <meta name="distribution" content="Global">
@@ -28,7 +31,7 @@
     <link rel="alternate" hreflang="zh" href="https://mdkworks.netlify.app/location.html?lang=zh">
     <link rel="alternate" hreflang="x-default" href="https://mdkworks.netlify.app/location.html">
 
-    <!-- 3. Local SEO & Geo Targeting -->
+    <!-- 3. Local SEO & Open Graph -->
     <meta name="geo.region" content="PK-PB">
     <meta name="geo.placename" content="Lahore">
     <meta name="geo.position" content="31.4335;74.3056">
@@ -36,8 +39,16 @@
     <meta property="og:type" content="place">
     <meta property="og:url" content="https://mdkworks.netlify.app/location.html">
     <meta property="og:title" content="Studio Location & Route Directions | Muhammad Daniyal">
-    <meta property="og:description" content="Interactive map, route planner, and area amenities guide.">
+    <meta property="og:description" content="Interactive map, route planner, and area amenities guide for MDK Studio Green Town Lahore.">
+    <meta property="og:image" content="https://i.postimg.cc/5yBQ2pZR/MDK.png">
     <meta property="og:locale" content="en_US">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://mdkworks.netlify.app/location.html">
+    <meta name="twitter:title" content="Studio Location & Route Directions | Muhammad Daniyal">
+    <meta name="twitter:description" content="Interactive OpenStreetMap route directions for visiting MDK Studio in Lahore.">
+    <meta name="twitter:image" content="https://i.postimg.cc/5yBQ2pZR/MDK.png">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -56,55 +67,58 @@
         href="https://i.postimg.cc/zDFwVm0R/a_3d_render_of_a_sleek_logo_displaying_t_WRu_g5NXRt6KYp_FGOq_b_Lw_16RSYne_RDW8XD5oo3lm_JA.jpg">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
 
-    <!-- Schema.org JSON-LD Structured Data for LocalBusiness & Breadcrumbs -->
+    <!-- 9D MASTER STRUCTURED DATA GRAPH FOR LOCATION & GBP -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Muhammad Daniyal Web Development Studio",
-      "image": "https://i.postimg.cc/5yBQ2pZR/MDK.png",
-      "@id": "https://mdkworks.netlify.app/location.html",
-      "url": "https://mdkworks.netlify.app/location.html",
-      "telephone": "+923230112464",
-      "priceRange": "$$",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "House No. 490, Block 5 Sector D2, Green Town",
-        "addressLocality": "Lahore",
-        "addressRegion": "Punjab",
-        "postalCode": "54000",
-        "addressCountry": "PK"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 31.4335,
-        "longitude": 74.3056
-      },
-      "hasMap": "https://maps.google.com/?q=31.4335,74.3056",
-      "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-        "opens": "09:00",
-        "closes": "21:00"
-      }
-    }
-    </script>
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
+      "@graph": [
         {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://mdkworks.netlify.app/"
+          "@type": ["LocalBusiness", "ProfessionalService"],
+          "@id": "https://mdkworks.netlify.app/location.html#localbusiness",
+          "name": "Muhammad Daniyal Web Development Studio",
+          "image": "https://i.postimg.cc/5yBQ2pZR/MDK.png",
+          "url": "https://mdkworks.netlify.app/location.html",
+          "telephone": "+923230112464",
+          "email": "m.daniyalkhan490@gmail.com",
+          "priceRange": "$$",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "House No. 490, Block 5 Sector D2, Green Town",
+            "addressLocality": "Lahore",
+            "addressRegion": "Punjab",
+            "postalCode": "54000",
+            "addressCountry": "PK"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 31.4335,
+            "longitude": 74.3056
+          },
+          "hasMap": "https://maps.google.com/?q=31.4335,74.3056",
+          "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+            "opens": "09:00",
+            "closes": "21:00"
+          }
         },
         {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Location",
-          "item": "https://mdkworks.netlify.app/location.html"
+          "@type": "BreadcrumbList",
+          "@id": "https://mdkworks.netlify.app/location.html#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://mdkworks.netlify.app/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Location",
+              "item": "https://mdkworks.netlify.app/location.html"
+            }
+          ]
         }
       ]
     }

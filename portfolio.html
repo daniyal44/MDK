@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <meta name="google-site-verification" content="qJrxCPL2ax_70QB7Ziqh5XjSm-TwX25T9hOJuYGWUc8" />
+
     <!-- 1. On-Page SEO Meta Tags -->
     <title>Portfolio Showcase & Commercial Web Projects | Muhammad Daniyal</title>
     <meta name="description"
@@ -17,6 +19,7 @@
 
     <!-- 2. Technical & International SEO -->
     <meta name="theme-color" content="#0d1117">
+    <link rel="manifest" href="site.webmanifest">
     <meta name="revisit-after" content="7 days">
     <meta name="coverage" content="Worldwide">
     <meta name="distribution" content="Global">
@@ -37,7 +40,15 @@
     <meta property="og:url" content="https://mdkworks.netlify.app/portfolio.html">
     <meta property="og:title" content="Portfolio & Project Showcase | Muhammad Daniyal">
     <meta property="og:description" content="Commercial web projects, SaaS platforms, and mobile apps created by Muhammad Daniyal.">
+    <meta property="og:image" content="https://mdkworks.netlify.app/zyphuel_preview.jpg">
     <meta property="og:locale" content="en_US">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://mdkworks.netlify.app/portfolio.html">
+    <meta name="twitter:title" content="Portfolio Showcase | Muhammad Daniyal">
+    <meta name="twitter:description" content="Explore live web applications, SaaS platforms, and UX design case studies.">
+    <meta name="twitter:image" content="https://mdkworks.netlify.app/zyphuel_preview.jpg">
 
     <!-- CDNs and Preconnects -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -52,51 +63,59 @@
         href="https://i.postimg.cc/zDFwVm0R/a_3d_render_of_a_sleek_logo_displaying_t_WRu_g5NXRt6KYp_FGOq_b_Lw_16RSYne_RDW8XD5oo3lm_JA.jpg">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
 
-    <!-- 9D SEO JSON-LD BUNDLE -->
+    <!-- 9D MASTER STRUCTURED DATA GRAPH FOR PORTFOLIO PAGE -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "CollectionPage",
-      "name": "Muhammad Daniyal Portfolio",
-      "url": "https://mdkworks.netlify.app/portfolio.html",
-      "description": "Showcase of web applications, SaaS platforms, and digital products.",
-      "mainEntity": {
-        "@type": "ItemList",
-        "itemListElement": [
-          {
-            "@type": "SoftwareApplication",
-            "name": "Zyphuel Fuel Platform",
-            "url": "https://zyphuel.netlify.app/"
-          },
-          {
-            "@type": "SoftwareApplication",
-            "name": "Resume Builder SaaS",
-            "url": "https://getownresume.netlify.app/"
-          },
-          {
-            "@type": "CreativeWork",
-            "name": "MDK Brew House"
-          }
-        ]
-      }
-    }
-    </script>
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
+      "@graph": [
         {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://mdkworks.netlify.app/"
+          "@type": "CollectionPage",
+          "@id": "https://mdkworks.netlify.app/portfolio.html#collectionpage",
+          "url": "https://mdkworks.netlify.app/portfolio.html",
+          "name": "Muhammad Daniyal Portfolio Showcase",
+          "description": "Showcase of web applications, SaaS platforms, and digital products crafted by Muhammad Daniyal.",
+          "author": { "@id": "https://mdkworks.netlify.app/#person" },
+          "mainEntity": {
+            "@type": "ItemList",
+            "itemListElement": [
+              {
+                "@type": "SoftwareApplication",
+                "name": "Zyphuel Fuel Platform",
+                "url": "https://zyphuel.netlify.app/",
+                "image": "https://mdkworks.netlify.app/zyphuel_preview.jpg",
+                "applicationCategory": "BusinessApplication"
+              },
+              {
+                "@type": "SoftwareApplication",
+                "name": "Resume Builder SaaS",
+                "url": "https://getownresume.netlify.app/",
+                "applicationCategory": "BusinessApplication"
+              },
+              {
+                "@type": "CreativeWork",
+                "name": "MDK Brew House & Culinary Experience",
+                "creator": { "@id": "https://mdkworks.netlify.app/#person" }
+              }
+            ]
+          }
         },
         {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Portfolio",
-          "item": "https://mdkworks.netlify.app/portfolio.html"
+          "@type": "BreadcrumbList",
+          "@id": "https://mdkworks.netlify.app/portfolio.html#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://mdkworks.netlify.app/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Portfolio",
+              "item": "https://mdkworks.netlify.app/portfolio.html"
+            }
+          ]
         }
       ]
     }

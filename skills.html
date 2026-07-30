@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <meta name="google-site-verification" content="qJrxCPL2ax_70QB7Ziqh5XjSm-TwX25T9hOJuYGWUc8" />
+
     <!-- 1. On-Page SEO Meta Tags -->
     <title>Programming Skills & Technology Stack | Muhammad Daniyal</title>
     <meta name="description"
@@ -17,6 +19,7 @@
 
     <!-- 2. Technical & International SEO -->
     <meta name="theme-color" content="#0d1117">
+    <link rel="manifest" href="site.webmanifest">
     <meta name="revisit-after" content="7 days">
     <meta name="coverage" content="Worldwide">
     <meta name="distribution" content="Global">
@@ -37,7 +40,15 @@
     <meta property="og:url" content="https://mdkworks.netlify.app/skills.html">
     <meta property="og:title" content="Programming Skills & Tech Stack | Muhammad Daniyal">
     <meta property="og:description" content="React, Angular, Vue, TypeScript, Firebase, SASS & modern web tools.">
+    <meta property="og:image" content="https://i.postimg.cc/5yBQ2pZR/MDK.png">
     <meta property="og:locale" content="en_US">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://mdkworks.netlify.app/skills.html">
+    <meta name="twitter:title" content="Programming Skills & Tech Stack | Muhammad Daniyal">
+    <meta name="twitter:description" content="Explore technical competencies across React, Vue, Angular, Node, & Web Engineering.">
+    <meta name="twitter:image" content="https://i.postimg.cc/5yBQ2pZR/MDK.png">
 
     <!-- CDNs and Preconnects -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -52,37 +63,51 @@
         href="https://i.postimg.cc/zDFwVm0R/a_3d_render_of_a_sleek_logo_displaying_t_WRu_g5NXRt6KYp_FGOq_b_Lw_16RSYne_RDW8XD5oo3lm_JA.jpg">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
 
-    <!-- 9D SEO JSON-LD BUNDLE -->
+    <!-- 9D MASTER STRUCTURED DATA GRAPH FOR SKILLS PAGE -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "ItemPage",
-      "name": "Muhammad Daniyal Skills and Technologies",
-      "url": "https://mdkworks.netlify.app/skills.html",
-      "mainEntity": {
-        "@type": "ItemList",
-        "itemListElement": [
-          "HTML5", "CSS3", "JavaScript", "TypeScript", "React", "Angular", "Vue", "Firebase", "SASS", "Git", "Webpack", "PugJs", "JQuery", "Bootstrap", "Ajax", "Gulp", "Npm"
-        ]
-      }
-    }
-    </script>
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
+      "@graph": [
         {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://mdkworks.netlify.app/"
+          "@type": "TechArticle",
+          "@id": "https://mdkworks.netlify.app/skills.html#techarticle",
+          "headline": "Software Engineering & Technical Stack of Muhammad Daniyal",
+          "description": "Detailed technology stack including React, Angular, Vue, TypeScript, JavaScript, Firebase, SASS, Git, and Modern Web Architecture.",
+          "author": { "@id": "https://mdkworks.netlify.app/#person" },
+          "inLanguage": "en"
         },
         {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Skills",
-          "item": "https://mdkworks.netlify.app/skills.html"
+          "@type": "ItemList",
+          "@id": "https://mdkworks.netlify.app/skills.html#itemlist",
+          "name": "Technical Competencies",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "React" },
+            { "@type": "ListItem", "position": 2, "name": "Angular" },
+            { "@type": "ListItem", "position": 3, "name": "Vue.js" },
+            { "@type": "ListItem", "position": 4, "name": "TypeScript" },
+            { "@type": "ListItem", "position": 5, "name": "JavaScript (ES6+)" },
+            { "@type": "ListItem", "position": 6, "name": "Firebase" },
+            { "@type": "ListItem", "position": 7, "name": "HTML5 & CSS3/SASS" },
+            { "@type": "ListItem", "position": 8, "name": "Git & Webpack" }
+          ]
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://mdkworks.netlify.app/skills.html#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://mdkworks.netlify.app/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Skills",
+              "item": "https://mdkworks.netlify.app/skills.html"
+            }
+          ]
         }
       ]
     }

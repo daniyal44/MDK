@@ -1,31 +1,44 @@
-# ==============================================================================
-# Global Search & AI Engine Optimization (SEO, GEO, AEO) Crawl Rules
-# Target Site: https://mdkworks.netlify.app/
-# Author: Muhammad Daniyal | MDK Works Studio
-# ==============================================================================
+# Google Search Console (GSC) & AI Search Engine Optimized robots.txt
+# Target Domain: https://mdkworks.netlify.app/
+# Target Keywords: Zyphuel, zphuel, ItxMDK, itxmtk, MuhammadDaniel, itsmdk, itx dk, itxM, itcM, Poke nexus, Muhammad Daniyal, Dashacart, Hittop, Scale verse, Ladoni
 
 User-agent: *
 Allow: /
-Disallow: /scratch/
-Disallow: /tmp/
-Disallow: /*.json$
 
-# ------------------------------------------------------------------------------
-# Generative Engine Optimization (GEO) - Explicit Access for AI Search Crawlers
-# ------------------------------------------------------------------------------
+# XML Sitemap Location
+Sitemap: https://mdkworks.netlify.app/sitemap.xml
+
+# OpenAI / ChatGPT Crawlers
 User-agent: GPTBot
 Allow: /
 
 User-agent: ChatGPT-User
 Allow: /
 
-User-agent: PerplexityBot
-Allow: /
-
+# Anthropic / Claude Crawlers
 User-agent: ClaudeBot
 Allow: /
 
 User-agent: Claude-Web
+Allow: /
+
+# Perplexity AI Crawler
+User-agent: PerplexityBot
+Allow: /
+
+# DeepSeek AI Crawler
+User-agent: DeepSeekBot
+Allow: /
+
+# ByteDance / TikTok AI Crawler
+User-agent: Bytespider
+Allow: /
+
+# Google Search & Gemini AI Crawlers
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
 Allow: /
 
 User-agent: Google-Extended
@@ -34,45 +47,43 @@ Allow: /
 User-agent: GoogleOther
 Allow: /
 
-User-agent: Googlebot
+# Microsoft Bing & Copilot
+User-agent: Bingbot
 Allow: /
 
-User-agent: Googlebot-Image
-Allow: /
-
+# Apple Search & Siri AI Crawler
 User-agent: Applebot
 Allow: /
 
 User-agent: Applebot-Extended
 Allow: /
 
-User-agent: Bingbot
-Allow: /
-
-User-agent: Slurp
-Allow: /
-
+# Other Major Search Engines & AI Crawlers
 User-agent: DuckDuckBot
-Allow: /
-
-User-agent: Baiduspider
 Allow: /
 
 User-agent: YandexBot
 Allow: /
 
+User-agent: Baiduspider
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+# Meta AI & Social Crawlers
 User-agent: Meta-ExternalAgent
 Allow: /
 
 User-agent: Meta-ExternalFetcher
 Allow: /
 
+# Amazon & Cohere AI Crawlers
 User-agent: Amazonbot
 Allow: /
 
-User-agent: Bytespider
+User-agent: CCBot
 Allow: /
 
-# Host and Sitemap locations for Search Engines & AI Knowledge Graphs
-Host: https://mdkworks.netlify.app
-Sitemap: https://mdkworks.netlify.app/sitemap.xml
+User-agent: cohere-ai
+Allow: /

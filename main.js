@@ -728,6 +728,31 @@ const updateActiveNavLink = function() {
 };
 
 // ----------------------------------------------------
+// Word-Level SEO, AEO, GEO & Microdata Enforcer
+// ----------------------------------------------------
+const initWordLevelSEO = function() {
+    const keywords = ["Zyphuel", "zphuel", "ItxMDK", "itxmtk", "MuhammadDaniel", "itsmdk", "itx dk", "itxM", "itcM", "Poke nexus", "Muhammad Daniyal", "Dashacart", "Hittop", "Scale verse", "Ladoni"];
+    
+    // Enrich buttons and interactive links with accessibility & SEO attributes
+    document.querySelectorAll('a, button, input, .project-card, .skills-card, .contact-social-link').forEach(el => {
+        if (!el.getAttribute('title')) {
+            const text = el.innerText || el.getAttribute('aria-label') || '';
+            el.setAttribute('title', `${text ? text.trim() + ' - ' : ''}Muhammad Daniyal (ItxMDK / Zyphuel) | Scale verse`);
+        }
+        if (!el.getAttribute('data-seo-brand')) {
+            el.setAttribute('data-seo-brand', 'Zyphuel-ItxMDK');
+        }
+    });
+
+    // Ensure all images have fallback alt attributes referencing target brands
+    document.querySelectorAll('img').forEach(img => {
+        if (!img.getAttribute('alt') || img.getAttribute('alt').trim() === '') {
+            img.setAttribute('alt', `Muhammad Daniyal (ItxMDK / Zyphuel / Scale verse) Project Portfolio`);
+        }
+    });
+};
+
+// ----------------------------------------------------
 // Initialize All Modules on DOM Content Loaded
 // ----------------------------------------------------
 document.addEventListener('DOMContentLoaded', function() {
@@ -735,4 +760,5 @@ document.addEventListener('DOMContentLoaded', function() {
     initMapAndAmenities();
     initDirectionsPlanner();
     initAddressAutocomplete();
+    initWordLevelSEO();
 });

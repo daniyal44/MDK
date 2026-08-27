@@ -36,6 +36,15 @@ const HomePage = () => {
                     <div style={{ display: 'flex', gap: '15px', flexWrap: 'wrap', marginTop: '20px' }}>
                         <Link to="/contact" className="btn btn-primary">{t('hero_btn')}</Link>
                         <Link to="/portfolio" className="btn btn-outline">{t('about_btn_work')}</Link>
+                        <a 
+                            href="/MDK.apk" 
+                            download="MDK.apk" 
+                            className="btn btn-secondary"
+                            title="Download Android APK"
+                        >
+                            <i className="ri-android-line" style={{ marginRight: '6px' }}></i>
+                            {t('about_btn_app')}
+                        </a>
                     </div>
                 </div>
 

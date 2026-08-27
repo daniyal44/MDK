@@ -15,7 +15,7 @@ const AboutPage = () => {
                 <figure className="about-banner" data-reveal="left">
                     <div className="about-image-wrapper">
                         <img 
-                            src="https://i.postimg.cc/vBkwZ6W2/Generated-Image-December-11-2025-11-08PM.png"
+                            src="images/daniyal.jpeg"
                             alt="Muhammad Daniyal - Senior Software Engineer" 
                             className="w-100" 
                             width="600" 
@@ -40,6 +40,7 @@ const AboutPage = () => {
                                 download="Muhammad_Daniyal_CV.pdf" 
                                 className="btn btn-primary"
                             >
+                                <i className="ri-file-download-line" style={{ marginRight: '6px' }}></i>
                                 {t('about_btn_cv')}
                             </a>
                         </div>
@@ -49,6 +50,7 @@ const AboutPage = () => {
                                 download="MDK.apk" 
                                 className="btn btn-outline"
                             >
+                                <i className="ri-android-line" style={{ marginRight: '6px' }}></i>
                                 {t('about_btn_app')}
                             </a>
                         </div>

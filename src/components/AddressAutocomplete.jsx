@@ -17,7 +17,10 @@ const AddressAutocomplete = ({ value, onChange, onSelect }) => {
         };
 
         document.addEventListener('click', handleClickOutside);
-        return () => document.removeEventListener('click', handleClickOutside);
+        return () => {
+            document.removeEventListener('click', handleClickOutside);
+            if (debounceTimer.current) clearTimeout(debounceTimer.current);
+        };
     }, []);
 
     const handleInputChange = (e) => {

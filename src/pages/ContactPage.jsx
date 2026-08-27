@@ -13,6 +13,7 @@ const ContactPage = () => {
         message: ''
     });
     const [isSubmitted, setIsSubmitted] = useState(false);
+    const [isSuccess, setIsSuccess] = useState(false);
     useScrollReveal();
 
     const handleChange = (e) => {
@@ -27,18 +28,21 @@ const ContactPage = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         setIsSubmitted(true);
-        // Show success state
         setTimeout(() => {
-            alert(`Thank you ${formData.name}! Your message has been received.`);
-            setFormData({
-                name: '',
-                email: '',
-                phone: '',
-                address: '',
-                message: ''
-            });
             setIsSubmitted(false);
-        }, 500);
+            setIsSuccess(true);
+        }, 400);
+    };
+
+    const handleReset = () => {
+        setFormData({
+            name: '',
+            email: '',
+            phone: '',
+            address: '',
+            message: ''
+        });
+        setIsSuccess(false);
     };
 
     return (
@@ -146,93 +150,138 @@ const ContactPage = () => {
                 </div>
 
                 <div className="contact-form-wrapper" data-reveal="right">
-                    <form className="contact-form" onSubmit={handleSubmit} autoComplete="off">
-                        <div className="form-wrapper">
-                            <label htmlFor="name" className="form-label">{t('contact_lbl_name')}</label>
-                            <div className="input-wrapper">
-                                <input 
-                                    type="text" 
-                                    name="name" 
-                                    id="name" 
-                                    value={formData.name}
-                                    onChange={handleChange}
-                                    required 
-                                    placeholder="John Doe" 
-                                    className="input-field" 
-                                    autoComplete="name" 
-                                />
-                                <i className="ri-user-line input-icon"></i>
+                    {isSuccess ? (
+                        <div style={{
+                            background: 'var(--bg-secondary)',
+                            backdropFilter: 'blur(16px)',
+                            border: '1px solid var(--border-color)',
+                            borderRadius: 'var(--radius-premium)',
+                            padding: '40px 30px',
+                            textAlign: 'center',
+                            boxShadow: 'var(--card-shadow)'
+                        }}>
+                            <div style={{
+                                width: '70px',
+                                height: '70px',
+                                background: 'linear-gradient(135deg, #10b981, #06b6d4)',
+                                borderRadius: '50%',
+                                display: 'flex',
+                                alignItems: 'center',
+                                justifyContent: 'center',
+                                margin: '0 auto 20px',
+                                fontSize: '32px',
+                                color: '#fff',
+                                boxShadow: '0 0 20px rgba(16, 185, 129, 0.4)'
+                            }}>
+                                <i className="ri-check-line"></i>
+                            </div>
+                            <h3 className="h3" style={{ marginBottom: '10px' }}>Message Sent Successfully!</h3>
+                            <p style={{ color: 'var(--color-secondary)', marginBottom: '25px', lineHeight: '1.6' }}>
+                                Thank you <strong>{formData.name}</strong>. Your project inquiry has been received. I will get back to you shortly via <strong>{formData.email}</strong>.
+                            </p>
+                            <div style={{ display: 'flex', gap: '15px', justifyContent: 'center', flexWrap: 'wrap' }}>
+                                <button type="button" onClick={handleReset} className="btn btn-primary">
+                                    <i className="ri-refresh-line" style={{ marginRight: '6px' }}></i> Send Another Message
+                                </button>
+                                <a 
+                                    href={`https://wa.me/923230112464?text=${encodeURIComponent(`Hi Daniyal, I submitted an inquiry for: ${formData.message}`)}`} 
+                                    target="_blank" 
+                                    rel="noopener noreferrer" 
+                                    className="btn btn-outline"
+                                >
+                                    <i className="ri-whatsapp-fill" style={{ marginRight: '6px' }}></i> Chat on WhatsApp
+                                </a>
                             </div>
                         </div>
-
-                        <div className="form-wrapper">
-                            <label htmlFor="email" className="form-label">{t('contact_lbl_email')}</label>
-                            <div className="input-wrapper">
-                                <input 
-                                    type="email" 
-                                    name="email" 
-                                    id="email" 
-                                    value={formData.email}
-                                    onChange={handleChange}
-                                    required 
-                                    placeholder="johndoe@gmail.com" 
-                                    className="input-field" 
-                                    autoComplete="email" 
-                                />
-                                <i className="ri-mail-line input-icon"></i>
+                    ) : (
+                        <form className="contact-form" onSubmit={handleSubmit} autoComplete="off">
+                            <div className="form-wrapper">
+                                <label htmlFor="name" className="form-label">{t('contact_lbl_name')}</label>
+                                <div className="input-wrapper">
+                                    <input 
+                                        type="text" 
+                                        name="name" 
+                                        id="name" 
+                                        value={formData.name}
+                                        onChange={handleChange}
+                                        required 
+                                        placeholder="John Doe" 
+                                        className="input-field" 
+                                        autoComplete="name" 
+                                    />
+                                    <i className="ri-user-line input-icon"></i>
+                                </div>
                             </div>
-                        </div>
 
-                        <div className="form-wrapper">
-                            <label htmlFor="phone" className="form-label">{t('contact_lbl_phone')}</label>
-                            <div className="input-wrapper">
-                                <input 
-                                    type="tel" 
-                                    name="phone" 
-                                    id="phone" 
-                                    value={formData.phone}
-                                    onChange={handleChange}
-                                    required 
-                                    placeholder="+1 234-567-8901" 
-                                    className="input-field" 
-                                    autoComplete="tel" 
-                                />
-                                <i className="ri-phone-line input-icon"></i>
+                            <div className="form-wrapper">
+                                <label htmlFor="email" className="form-label">{t('contact_lbl_email')}</label>
+                                <div className="input-wrapper">
+                                    <input 
+                                        type="email" 
+                                        name="email" 
+                                        id="email" 
+                                        value={formData.email}
+                                        onChange={handleChange}
+                                        required 
+                                        placeholder="johndoe@gmail.com" 
+                                        className="input-field" 
+                                        autoComplete="email" 
+                                    />
+                                    <i className="ri-mail-line input-icon"></i>
+                                </div>
                             </div>
-                        </div>
 
-                        {/* Smart Address Autocomplete Field */}
-                        <AddressAutocomplete 
-                            value={formData.address}
-                            onChange={handleAddressChange}
-                        />
-
-                        <div className="form-wrapper">
-                            <label htmlFor="message" className="form-label">{t('contact_lbl_msg')}</label>
-                            <div className="input-wrapper">
-                                <textarea 
-                                    name="message" 
-                                    id="message" 
-                                    value={formData.message}
-                                    onChange={handleChange}
-                                    className="input-field" 
-                                    required 
-                                    placeholder="Write your Message"
-                                    rows="4"
-                                ></textarea>
-                                <i className="ri-chat-3-line input-icon"></i>
+                            <div className="form-wrapper">
+                                <label htmlFor="phone" className="form-label">{t('contact_lbl_phone')}</label>
+                                <div className="input-wrapper">
+                                    <input 
+                                        type="tel" 
+                                        name="phone" 
+                                        id="phone" 
+                                        value={formData.phone}
+                                        onChange={handleChange}
+                                        required 
+                                        placeholder="+1 234-567-8901" 
+                                        className="input-field" 
+                                        autoComplete="tel" 
+                                    />
+                                    <i className="ri-phone-line input-icon"></i>
+                                </div>
                             </div>
-                        </div>
 
-                        <button 
-                            type="submit" 
-                            className="btn btn-primary" 
-                            id="submitBtn"
-                            disabled={isSubmitted}
-                        >
-                            {isSubmitted ? 'Sending...' : t('contact_btn_send')}
-                        </button>
-                    </form>
+                            {/* Smart Address Autocomplete Field */}
+                            <AddressAutocomplete 
+                                value={formData.address}
+                                onChange={handleAddressChange}
+                            />
+
+                            <div className="form-wrapper">
+                                <label htmlFor="message" className="form-label">{t('contact_lbl_msg')}</label>
+                                <div className="input-wrapper">
+                                    <textarea 
+                                        name="message" 
+                                        id="message" 
+                                        value={formData.message}
+                                        onChange={handleChange}
+                                        className="input-field" 
+                                        required 
+                                        placeholder="Write your Message"
+                                        rows="4"
+                                    ></textarea>
+                                    <i className="ri-chat-3-line input-icon"></i>
+                                </div>
+                            </div>
+
+                            <button 
+                                type="submit" 
+                                className="btn btn-primary" 
+                                id="submitBtn"
+                                disabled={isSubmitted}
+                            >
+                                {isSubmitted ? 'Sending...' : t('contact_btn_send')}
+                            </button>
+                        </form>
+                    )}
                 </div>
             </section>
         </article>

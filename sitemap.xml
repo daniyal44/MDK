@@ -2,10 +2,10 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-  <!-- 1. Home Page (Zyphuel, ItxMDK, Muhammad Daniyal, Scale verse) -->
+  <!-- 1. Home Page (Zyphuel Petrol Price Pakistan, Cricket Scores, ItxMDK, Muhammad Daniyal) -->
   <url>
     <loc>https://mdkworks.netlify.app/</loc>
-    <lastmod>2026-08-01</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://mdkworks.netlify.app/"/>
@@ -17,112 +17,83 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mdkworks.netlify.app/"/>
     <image:image>
       <image:loc>https://i.postimg.cc/5yBQ2pZR/MDK.png</image:loc>
-      <image:title>Muhammad Daniyal (ItxMDK / Zyphuel) - Senior Full Stack Web Developer &amp; UI/UX Product Designer</image:title>
-      <image:caption>Official Portfolio of Muhammad Daniyal (ItxMDK, zphuel, itxmtk, MuhammadDaniel, itsmdk, itx dk, itxM, itcM) - Creator of Zyphuel, Poke nexus, Dashacart, Hittop, Scale verse, Ladoni</image:caption>
+      <image:title>Muhammad Daniyal (ItxMDK / Zyphuel) - Senior Full Stack Web &amp; App Developer Lahore</image:title>
+      <image:caption>Official Portfolio of Muhammad Daniyal (Zyphuel, Zphuel, Zfaul, zafuel, zaifuel, ziphuel, zyphra, ItxMDK) - Petrol price in Pakistan, Asia cup cricket, Poke nexus, Dashacart, Hittop, Scale verse, Ladoni</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://i.postimg.cc/zDFwVm0R/a_3d_render_of_a_sleek_logo_displaying_t_WRu_g5NXRt6KYp_FGOq_b_Lw_16RSYne_RDW8XD5oo3lm_JA.jpg</image:loc>
-      <image:title>Zyphuel &amp; ItxMDK Works Studio 3D Branding Logo</image:title>
-      <image:caption>Official Zyphuel &amp; Scale verse Studio Icon</image:caption>
+      <image:title>Zyphuel Petrol &amp; Fuel Price Checker in Pakistan Logo</image:title>
+      <image:caption>Zyphuel, Scale verse &amp; MDK Works Official Studio Icon</image:caption>
     </image:image>
   </url>
 
-  <!-- 2. About Page (Muhammad Daniyal / ItxMDK / Zyphuel Profile) -->
+  <!-- 2. About Page (Muhammad Daniyal / ItxMDK / Zyphuel Profile & Bio) -->
   <url>
-    <loc>https://mdkworks.netlify.app/about.html</loc>
-    <lastmod>2026-08-01</lastmod>
+    <loc>https://mdkworks.netlify.app/about</loc>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mdkworks.netlify.app/about.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://mdkworks.netlify.app/about.html?lang=es"/>
-    <xhtml:link rel="alternate" hreflang="ur" href="https://mdkworks.netlify.app/about.html?lang=ur"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://mdkworks.netlify.app/about.html?lang=fr"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://mdkworks.netlify.app/about.html?lang=de"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://mdkworks.netlify.app/about.html?lang=zh"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mdkworks.netlify.app/about.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mdkworks.netlify.app/about"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mdkworks.netlify.app/about?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://mdkworks.netlify.app/about?lang=ur"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mdkworks.netlify.app/about"/>
     <image:image>
       <image:loc>https://i.postimg.cc/vBkwZ6W2/Generated-Image-December-11-2025-11-08PM.png</image:loc>
-      <image:title>Muhammad Daniyal (ItxMDK / zphuel / MuhammadDaniel) Senior Software Engineer</image:title>
-      <image:caption>Muhammad Daniyal - 12+ Years Senior Engineer &amp; Tech Lead at Zyphuel &amp; Scale verse</image:caption>
+      <image:title>Muhammad Daniyal (ItxMDK / Zyphuel) Senior Software Engineer Lahore</image:title>
+      <image:caption>Muhammad Daniyal - 12+ Years Experience building Zyphuel Fuel App, Poke nexus, Dashacart, Hittop, Scale verse, Ladoni</image:caption>
     </image:image>
   </url>
 
-  <!-- 3. Skills Page -->
+  <!-- 3. Skills Page (React, Mobile App Developer, Node.js) -->
   <url>
-    <loc>https://mdkworks.netlify.app/skills.html</loc>
-    <lastmod>2026-08-01</lastmod>
+    <loc>https://mdkworks.netlify.app/skills</loc>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mdkworks.netlify.app/skills.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://mdkworks.netlify.app/skills.html?lang=es"/>
-    <xhtml:link rel="alternate" hreflang="ur" href="https://mdkworks.netlify.app/skills.html?lang=ur"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://mdkworks.netlify.app/skills.html?lang=fr"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://mdkworks.netlify.app/skills.html?lang=de"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://mdkworks.netlify.app/skills.html?lang=zh"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mdkworks.netlify.app/skills.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mdkworks.netlify.app/skills"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mdkworks.netlify.app/skills?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://mdkworks.netlify.app/skills?lang=ur"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mdkworks.netlify.app/skills"/>
   </url>
 
-  <!-- 4. Portfolio Page (Poke nexus, Dashacart, Hittop, Scale verse, Ladoni, Zyphuel) -->
+  <!-- 4. Portfolio Page (Zyphuel Petrol Price, Poke nexus Cricket, Dashacart, Hittop, Scale verse, Ladoni) -->
   <url>
-    <loc>https://mdkworks.netlify.app/portfolio.html</loc>
-    <lastmod>2026-08-01</lastmod>
+    <loc>https://mdkworks.netlify.app/portfolio</loc>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.95</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mdkworks.netlify.app/portfolio.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://mdkworks.netlify.app/portfolio.html?lang=es"/>
-    <xhtml:link rel="alternate" hreflang="ur" href="https://mdkworks.netlify.app/portfolio.html?lang=ur"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://mdkworks.netlify.app/portfolio.html?lang=fr"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://mdkworks.netlify.app/portfolio.html?lang=de"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://mdkworks.netlify.app/portfolio.html?lang=zh"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mdkworks.netlify.app/portfolio.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mdkworks.netlify.app/portfolio"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mdkworks.netlify.app/portfolio?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://mdkworks.netlify.app/portfolio?lang=ur"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mdkworks.netlify.app/portfolio"/>
     <image:image>
       <image:loc>https://mdkworks.netlify.app/zyphuel_preview.jpg</image:loc>
-      <image:title>Zyphuel Platform Case Study by ItxMDK</image:title>
-      <image:caption>Zyphuel SaaS &amp; Apps Portfolio by Muhammad Daniyal (ItxMDK, Poke nexus, Dashacart, Hittop, Scale verse, Ladoni)</image:caption>
+      <image:title>Zyphuel - Petrol Price in Pakistan &amp; Fuel Delivery App</image:title>
+      <image:caption>Zyphuel, Poke nexus, Dashacart, Hittop, Scale verse, Ladoni apps by Muhammad Daniyal (ItxMDK)</image:caption>
     </image:image>
   </url>
 
-  <!-- 5. Location Page -->
+  <!-- 5. Location Page (Lahore Web Developer Studio Map) -->
   <url>
-    <loc>https://mdkworks.netlify.app/location.html</loc>
-    <lastmod>2026-08-01</lastmod>
+    <loc>https://mdkworks.netlify.app/location</loc>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mdkworks.netlify.app/location.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://mdkworks.netlify.app/location.html?lang=es"/>
-    <xhtml:link rel="alternate" hreflang="ur" href="https://mdkworks.netlify.app/location.html?lang=ur"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://mdkworks.netlify.app/location.html?lang=fr"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://mdkworks.netlify.app/location.html?lang=de"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://mdkworks.netlify.app/location.html?lang=zh"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mdkworks.netlify.app/location.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mdkworks.netlify.app/location"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mdkworks.netlify.app/location?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://mdkworks.netlify.app/location?lang=ur"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mdkworks.netlify.app/location"/>
   </url>
 
-  <!-- 6. Contact Page -->
+  <!-- 6. Contact Page (Hire Lahore Web & App Developer) -->
   <url>
-    <loc>https://mdkworks.netlify.app/contact.html</loc>
-    <lastmod>2026-08-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.90</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mdkworks.netlify.app/contact.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://mdkworks.netlify.app/contact.html?lang=es"/>
-    <xhtml:link rel="alternate" hreflang="ur" href="https://mdkworks.netlify.app/contact.html?lang=ur"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://mdkworks.netlify.app/contact.html?lang=fr"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://mdkworks.netlify.app/contact.html?lang=de"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://mdkworks.netlify.app/contact.html?lang=zh"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mdkworks.netlify.app/contact.html"/>
-  </url>
-
-  <!-- 7. Downloadable Assets -->
-  <url>
-    <loc>https://mdkworks.netlify.app/MDK.pdf</loc>
-    <lastmod>2026-08-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://mdkworks.netlify.app/Zyphuel.apk</loc>
-    <lastmod>2026-08-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
+    <loc>https://mdkworks.netlify.app/contact</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.95</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mdkworks.netlify.app/contact"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mdkworks.netlify.app/contact?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://mdkworks.netlify.app/contact?lang=ur"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mdkworks.netlify.app/contact"/>
   </url>
 </urlset>

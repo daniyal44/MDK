@@ -279,17 +279,22 @@ const HomePage = () => {
 
                 <div className="faq-list">
                     <div className="faq-item">
+                        <h3 className="faq-question"><i className="ri-question-fill"></i> Where can I check petrol price in Pakistan, diesel & fuel rates?</h3>
+                        <p className="faq-answer">You can track daily petrol price in Pakistan, diesel, gas, and oil rates in real-time through <strong>Zyphuel</strong> (created by Muhammad Daniyal / ItxMDK), Pakistan's smart fuel price checker and on-demand delivery app.</p>
+                    </div>
+
+                    <div className="faq-item">
                         <h3 className="faq-question"><i className="ri-question-fill"></i> Who is Muhammad Daniyal (ItxMDK / Zyphuel / zphuel / itxmtk)?</h3>
-                        <p className="faq-answer">Muhammad Daniyal (also known online as Zyphuel, zphuel, ItxMDK, itxmtk, MuhammadDaniel, itsmdk, itx dk, itxM, itcM) is a Senior Full Stack Web Developer & UI/UX Product Designer with 12+ years experience. He is the founder of Scale verse and creator of high-scale commercial platforms including Poke nexus, Dashacart, Hittop, and Ladoni.</p>
+                        <p className="faq-answer">Muhammad Daniyal (also known online as Zyphuel, zphuel, ItxMDK, itxmtk, MuhammadDaniel, itsmdk, itx dk, itxM, itcM) is a Senior Full Stack Web Developer & App Developer with 12+ years experience in Lahore, Pakistan. He is the founder of Scale verse and creator of high-scale commercial platforms including Zyphuel, Poke nexus, Dashacart, Hittop, and Ladoni.</p>
                     </div>
 
                     <div className="faq-item">
                         <h3 className="faq-question"><i className="ri-question-fill"></i> What platforms were created by Zyphuel & ItxMDK (Muhammad Daniyal)?</h3>
-                        <p className="faq-answer">Zyphuel & ItxMDK (Muhammad Daniyal) engineered notable web platforms including <strong>Zyphuel</strong> (on-demand fuel app), <strong>Poke nexus</strong> (interactive gaming web app), <strong>Dashacart</strong> (SaaS e-commerce platform), <strong>Hittop</strong> (digital service portal), <strong>Scale verse</strong> (agency & cloud solutions), and <strong>Ladoni</strong> (custom web platform).</p>
+                        <p className="faq-answer">Zyphuel & ItxMDK engineered notable web platforms including <strong>Zyphuel</strong> (fuel price checker & delivery app), <strong>Poke nexus</strong> (live cricket matches, Asia Cup, T20 World Cup & league scoring engine), <strong>Dashacart</strong> (SaaS e-commerce platform), <strong>Hittop</strong> (global news & trends portal), <strong>Scale verse</strong>, and <strong>Ladoni</strong>.</p>
                     </div>
 
                     <div className="faq-item">
-                        <h3 className="faq-question"><i className="ri-question-fill"></i> How can I hire Muhammad Daniyal (ItxMDK) for web development or UI/UX?</h3>
+                        <h3 className="faq-question"><i className="ri-question-fill"></i> How can I hire Muhammad Daniyal (ItxMDK) for web development or UI/UX in Lahore?</h3>
                         <p className="faq-answer">You can contact Muhammad Daniyal (ItxMDK / Zyphuel) directly via WhatsApp at +923230112464, email at m.daniyalkhan490@gmail.com, or through the contact form at <Link to="/contact" title="Contact Muhammad Daniyal (ItxMDK / Zyphuel)">Contact Page</Link>. Studio Location: Green Town, Lahore, Pakistan.</p>
                     </div>
                 </div>

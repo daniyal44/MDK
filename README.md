@@ -39,55 +39,65 @@ Engineered from the ground up as a blazing-fast **React 18 Single Page Applicati
 
 ---
 
-## 📈 Codebase Evolution Graph (Start to Present)
+## 📅 Yearly Engineering Evolution (2021 – 2026)
 
-The following architectural graph details the full evolution of the codebase from inception (**Start**) to the current production deployment (**Now**):
+The chronological trajectory of software engineering milestones, architectural transitions, and platform deployments:
+
+```mermaid
+flowchart LR
+    Y1["📅 2021 - 2022<br/><strong>Core Web Foundation</strong><br/>• Semantic HTML5 & Responsive CSS3<br/>• Vanilla JavaScript & DOM Control<br/>• High-Performance Static Web Portfolios"]
+    --> Y2["📅 2023<br/><strong>Full-Stack & APIs</strong><br/>• RESTful API Design & Integration<br/>• Node.js Backend Microservices<br/>• Custom UI/UX Systems & Animations"]
+    --> Y3["📅 2024<br/><strong>SaaS Product Engines</strong><br/>• Headless E-Commerce Architecture<br/>• Dashacart Product Conceptualization<br/>• Dynamic PDF Engines (Resume Builder)"]
+    --> Y4["📅 2025<br/><strong>Mobile & Real-Time Intelligence</strong><br/>• Zyphuel Fuel Network (Pakistan)<br/>• Native Android APK Client Delivery<br/>• OpenStreetMap Geolocation Engine"]
+    --> Y5["📅 2026<br/><strong>Modern SPA, AI GEO & CI/CD</strong><br/>• React 18.3 & Vite 5.4 SPA Migration<br/>• AI Knowledge Graph (GEO / AEO)<br/>• International GitHub CI/CD & Governance"]
+```
+
+---
+
+## 📆 Monthly Codebase Sprint & Evolution Graph (2026: Start to Present)
+
+Detailed sprint-by-sprint architectural evolution of this repository from inception to the present:
 
 ```mermaid
 flowchart TD
-    subgraph Phase1["Phase 1: Genesis & Static Web Foundation"]
-        A1["Legacy Multi-Page HTML/CSS Architecture"] --> A2["Per-Word SEO & International Search Tuning"]
-        A2 --> A3["Initial APK & PDF Document Downloads Distribution"]
+    subgraph M1["📅 Month 1 — July 2026: Core SEO, GEO & Topical Authority"]
+        direction TB
+        J1["Word-Level International SEO & PageSpeed Optimization (100% Core Web Vitals)"]
+        J2["LocalBusiness & Google Business Profile Schema (Green Town, Lahore 31.4335, 74.3056)"]
+        J3["Clean Schema Encapsulation in JSON-LD (Zero Prompt Leakage)"]
+        J1 --> J2 --> J3
     end
 
-    subgraph Phase2["Phase 2: React 18 & Vite SPA Modernization"]
-        B1["Single Page Application (SPA) Migration"] --> B2["Vite 5.4.2 Tooling & Hot Module Replacement"]
-        B2 --> B3["React Router v6 Client-Side Engine"]
-        B3 --> B4["Trilingual i18n Localization Engine (EN / ES / UR)"]
-        B4 --> B5["Theme Provider (Dark Glassmorphism / Light)"]
+    subgraph M2["📅 Month 2 — August 2026: React 18 SPA Migration & Interactive Geolocation"]
+        direction TB
+        A1["AI Bot Directives in robots.txt (GPTBot, Claude, Perplexity, DeepSeek)"]
+        A2["Architecture Modernization: Multi-Page HTML to React 18 + Vite 5 SPA"]
+        A3["Leaflet 1.9.4 & OpenStreetMap Geolocation Engine Integration"]
+        A4["Trilingual i18n Localization (EN, ES, UR) & Dark/Light Glassmorphism Theme"]
+        A1 --> A2 --> A3 --> A4
     end
 
-    subgraph Phase3["Phase 3: Interactive Geolocation Engine"]
-        C1["Leaflet 1.9.4 & OpenStreetMap Integration"] --> C2["Green Town Lahore Studio Marker (31.4335, 74.3056)"]
-        C2 --> C3["Real-Time Direction Planner & Amenity Radii Calculator"]
+    subgraph M3["📅 Month 3 — September 2026: Production SaaS Alignment & Enterprise CI/CD"]
+        direction TB
+        S1["Prune Placeholder Cards: Showcase Live Zyphuel & Resume Builder SaaS"]
+        S2["Hidden Schema Architecture: Poke nexus, Dashacart, Scale verse, Hittop, Ladoni"]
+        S3["Standardize 5+ Years Experience & Real Factual FAQs Across Ecosystem"]
+        S4["GitHub Actions Automated CI/CD Pipeline (Node 20 Production Build Verification)"]
+        S5["Enterprise Governance: MIT License, Conventional Commits & Safe Git Sync Tool"]
+        S1 --> S2 --> S3 --> S4 --> S5
     end
 
-    subgraph Phase4["Phase 4: Semantic AI Knowledge Graph (GEO / AEO)"]
-        D1["Topical Authority Overhaul (Anti-Spam Cleansing)"] --> D2["Schema.org Person & LocalBusiness JSON-LD"]
-        D2 --> D3["AI Web Crawlers Directives (GPTBot, Claude, Perplexity, DeepSeek)"]
-        D3 --> D4["100% Factual FAQPage Schema Verification"]
-    end
-
-    subgraph Phase5["Phase 5: Portfolio Realignment & Production Focus"]
-        E1["Prune Placeholder Cards (Clean Showcase)"] --> E2["Focus Exclusively on Live Production SaaS Platforms"]
-        E2 --> E3["Hidden Metadata Integration (Poke nexus, Dashacart, Scale verse, Hittop, Ladoni)"]
-        E3 --> E4["Standardize 5+ Years Experience Across Ecosystem"]
-        E4 --> E5["100% Real Website FAQs & Verified Developer Details"]
-    end
-
-    subgraph Phase6["Phase 6: Enterprise Governance, CI/CD & Automation"]
-        F1["GitHub Actions CI Pipeline (Node 20 Automated Build)"] --> F2["Conventional Commits Standard Enforced"]
-        F2 --> F3["MIT Open Source License & Security Policy"]
-        F3 --> F4["Interactive Conventional github.bat Push Tool"]
-        F4 --> F5["Continuous Production Mainline (mdkworks.netlify.app)"]
-    end
-
-    Phase1 --> Phase2
-    Phase2 --> Phase3
-    Phase3 --> Phase4
-    Phase4 --> Phase5
-    Phase5 --> Phase6
+    M1 -->|"Sprint Transition"| M2
+    M2 -->|"Sprint Transition"| M3
 ```
+
+### 📋 Monthly Sprint Breakdown
+
+| Period | Sprint Focus | Commits & Milestones | Deliverables & Code Impact |
+| :---: | :--- | :--- | :--- |
+| **July 2026** | **Core SEO, GEO & Local Authority** | `ead7f51`, `462384d`, `466d049` | Built per-word indexing architecture, LocalBusiness profile with Lahore coordinates (`31.4335, 74.3056`), and cleansed search schemas. |
+| **August 2026** | **React 18 SPA Migration & Maps** | `e3d9199`, `403667c`, `bb528bd`, `cc19206`, `e65001f`, `08a6913` | Re-architected entire platform to React 18 + Vite 5 SPA. Embedded Leaflet OpenStreetMap engine, trilingual i18n, dark/light theme, and AI crawler access. |
+| **September 2026** | **Production Alignment & Enterprise CI/CD** | `7e51dfc`, `31b664b`, `fa9bcb7`, `d289591`, `6806d1c`, `fe35ca1` | Pruned placeholder projects to feature live apps (Zyphuel, Resume Builder). Standardized 5+ years experience. Added GitHub Actions CI, MIT License, Conventional Commits, and interactive `github.bat`. |
 
 ---
 

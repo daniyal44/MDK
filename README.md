@@ -39,6 +39,101 @@ Engineered from the ground up as a blazing-fast **React 18 Single Page Applicati
 
 ---
 
+## 📈 Codebase Evolution Graph (Start to Present)
+
+The following architectural graph details the full evolution of the codebase from inception (**Start**) to the current production deployment (**Now**):
+
+```mermaid
+flowchart TD
+    subgraph Phase1["Phase 1: Genesis & Static Web Foundation"]
+        A1["Legacy Multi-Page HTML/CSS Architecture"] --> A2["Per-Word SEO & International Search Tuning"]
+        A2 --> A3["Initial APK & PDF Document Downloads Distribution"]
+    end
+
+    subgraph Phase2["Phase 2: React 18 & Vite SPA Modernization"]
+        B1["Single Page Application (SPA) Migration"] --> B2["Vite 5.4.2 Tooling & Hot Module Replacement"]
+        B2 --> B3["React Router v6 Client-Side Engine"]
+        B3 --> B4["Trilingual i18n Localization Engine (EN / ES / UR)"]
+        B4 --> B5["Theme Provider (Dark Glassmorphism / Light)"]
+    end
+
+    subgraph Phase3["Phase 3: Interactive Geolocation Engine"]
+        C1["Leaflet 1.9.4 & OpenStreetMap Integration"] --> C2["Green Town Lahore Studio Marker (31.4335, 74.3056)"]
+        C2 --> C3["Real-Time Direction Planner & Amenity Radii Calculator"]
+    end
+
+    subgraph Phase4["Phase 4: Semantic AI Knowledge Graph (GEO / AEO)"]
+        D1["Topical Authority Overhaul (Anti-Spam Cleansing)"] --> D2["Schema.org Person & LocalBusiness JSON-LD"]
+        D2 --> D3["AI Web Crawlers Directives (GPTBot, Claude, Perplexity, DeepSeek)"]
+        D3 --> D4["100% Factual FAQPage Schema Verification"]
+    end
+
+    subgraph Phase5["Phase 5: Portfolio Realignment & Production Focus"]
+        E1["Prune Placeholder Cards (Clean Showcase)"] --> E2["Focus Exclusively on Live Production SaaS Platforms"]
+        E2 --> E3["Hidden Metadata Integration (Poke nexus, Dashacart, Scale verse, Hittop, Ladoni)"]
+        E3 --> E4["Standardize 5+ Years Experience Across Ecosystem"]
+        E4 --> E5["100% Real Website FAQs & Verified Developer Details"]
+    end
+
+    subgraph Phase6["Phase 6: Enterprise Governance, CI/CD & Automation"]
+        F1["GitHub Actions CI Pipeline (Node 20 Automated Build)"] --> F2["Conventional Commits Standard Enforced"]
+        F2 --> F3["MIT Open Source License & Security Policy"]
+        F3 --> F4["Interactive Conventional github.bat Push Tool"]
+        F4 --> F5["Continuous Production Mainline (mdkworks.netlify.app)"]
+    end
+
+    Phase1 --> Phase2
+    Phase2 --> Phase3
+    Phase3 --> Phase4
+    Phase4 --> Phase5
+    Phase5 --> Phase6
+```
+
+---
+
+## 🏗️ System Architecture & Data Flow Graph
+
+This graph illustrates the component hierarchy, global state providers, data sources, and external cloud integrations:
+
+```mermaid
+flowchart TD
+    User(["Client Web Browser"]) --> App["App.jsx (Root Layout & Global Shell)"]
+
+    subgraph StateAndContext["Global State & Context Providers"]
+        App --> LangCtx["LanguageContext.jsx (Trilingual EN, ES, UR)"]
+        App --> ThemeCtx["ThemeContext.jsx (Dark Glassmorphism / Light)"]
+    end
+
+    subgraph NavigationLayer["Client-Side Routing (React Router v6)"]
+        App --> Nav["Navbar & Navigation Shell"]
+        Nav --> HomeRoute["/ (HomePage.jsx)"]
+        Nav --> AboutRoute["/about (AboutPage.jsx)"]
+        Nav --> SkillsRoute["/skills (SkillsPage.jsx)"]
+        Nav --> PortfolioRoute["/portfolio (PortfolioPage.jsx)"]
+        Nav --> LocationRoute["/location (LocationPage.jsx)"]
+        Nav --> ContactRoute["/contact (ContactPage.jsx)"]
+    end
+
+    subgraph ComponentDataLayer["Component & Structured Data Layer"]
+        HomeRoute --> FAQComp["FAQ Accordion (100% Factual Site Data)"]
+        HomeRoute --> StatsComp["Experience & Impact Stats (5+ Years)"]
+        PortfolioRoute --> ProjData["projectsData.js (Live Production SaaS)"]
+        SkillsRoute --> SkillData["skillsData.js (Tech Categories & Tools)"]
+        LocationRoute --> AmenityData["amenities.js (Lahore Local Distances)"]
+    end
+
+    subgraph ExternalServices["External Engines & Cloud Deployments"]
+        LocationRoute --> LeafletMap["Leaflet 1.9.4 & OpenStreetMap Tile Engine"]
+        HomeRoute --> StructuredData["Schema.org JSON-LD (Person, LocalBusiness, FAQPage)"]
+        ProjData --> ZyphuelApp["Zyphuel Fuel Platform (zyphuel.netlify.app)"]
+        ProjData --> ResumeApp["Resume Builder SaaS (getownresume.netlify.app)"]
+        App --> NetlifyCDN["Netlify Global Edge CDN (mdkworks.netlify.app)"]
+        App --> GitHubCI["GitHub Actions CI/CD Pipeline (Node 20 Runner)"]
+    end
+```
+
+---
+
 ## 🚀 Key Architectural Features
 
 ### 1. ⚡ High-Throughput Modern Architecture
@@ -193,6 +288,29 @@ This repository adheres strictly to **Conventional Commits** for an immaculate, 
 * `style`: Code style, formatting, or UI design adjustments.
 * `perf`: Performance optimizations.
 * `chore`: Build scripts, dependencies, or configuration updates.
+
+---
+
+## 📜 Git Commit Evolution Timeline (Start to Present)
+
+Every commit in this repository represents verified, functional engineering milestones:
+
+| Commit Hash | Semantic Scope | Engineering & Architectural Impact |
+| :---: | :--- | :--- |
+| `ead7f51` | `feat(seo)` | Initial SEO, AEO, and GEO international search optimization engine. |
+| `462384d` | `refactor(metadata)` | Clean schema encapsulation in backend JSON-LD with zero prompt leakage. |
+| `466d049` | `feat(local-seo)` | LocalBusiness schema and Google Business Profile (GBP) geo-tagging. |
+| `e3d9199` | `fix(crawlers)` | Search Console robots.txt fix and AI crawler directives (GPT, Claude, Perplexity). |
+| `403667c` | `feat(aeo)` | Word-level semantic entity attributes for brand and ecosystem applications. |
+| `bb528bd` | `feat(spa)` | **Master SPA Migration:** Converted entire multi-page HTML platform to React 18 + Vite. |
+| `cc19206` | `fix(download)` | Asset path resolution for mobile Zyphuel APK distribution. |
+| `e65001f` | `fix(bundle)` | Leaflet CSS bundling, timer cleanup, and interactive contact feedback. |
+| `08a6913` | `feat(knowledge-graph)` | Knowledge Graph entity schema, XML sitemap with alternate hreflang. |
+| `7e51dfc` | `refactor(platform)` | Production performance enhancements and configuration tuning. |
+| `31b664b` | `docs(repo)` | **World-Class Repository Architecture:** README.md, MIT License, CONTRIBUTING.md, SECURITY.md. |
+| `fa9bcb7` | `ci(github)` | Automated GitHub Actions CI workflow (Node 20 build verification) & PR/Issue templates. |
+| `d289591` | `chore(scripts)` | Conventional Commits enforcement and developer workflow script upgrade. |
+| `6806d1c` | `refactor(core)` | Production build integrity validation and safe commit synchronization. |
 
 ---
 

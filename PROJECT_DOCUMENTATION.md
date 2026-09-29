@@ -19,6 +19,54 @@ MDK Works is a modern Single Page Application (SPA) built using **React 18** and
 - **Icons & Typography:** Remix Icon, Google Fonts (Plus Jakarta Sans, Space Grotesk)
 - **Deployment Platform:** Netlify (automated build from GitHub main branch)
 
+### Codebase Evolution Graph (Start to Present):
+
+```mermaid
+flowchart TD
+    subgraph Phase1["Phase 1: Genesis & Static Web Foundation"]
+        A1["Legacy Multi-Page HTML/CSS Architecture"] --> A2["Per-Word SEO & International Search Tuning"]
+        A2 --> A3["Initial APK & PDF Document Downloads Distribution"]
+    end
+
+    subgraph Phase2["Phase 2: React 18 & Vite SPA Modernization"]
+        B1["Single Page Application (SPA) Migration"] --> B2["Vite 5.4.2 Tooling & Hot Module Replacement"]
+        B2 --> B3["React Router v6 Client-Side Engine"]
+        B3 --> B4["Trilingual i18n Localization Engine (EN / ES / UR)"]
+        B4 --> B5["Theme Provider (Dark Glassmorphism / Light)"]
+    end
+
+    subgraph Phase3["Phase 3: Interactive Geolocation Engine"]
+        C1["Leaflet 1.9.4 & OpenStreetMap Integration"] --> C2["Green Town Lahore Studio Marker (31.4335, 74.3056)"]
+        C2 --> C3["Real-Time Direction Planner & Amenity Radii Calculator"]
+    end
+
+    subgraph Phase4["Phase 4: Semantic AI Knowledge Graph (GEO / AEO)"]
+        D1["Topical Authority Overhaul (Anti-Spam Cleansing)"] --> D2["Schema.org Person & LocalBusiness JSON-LD"]
+        D2 --> D3["AI Web Crawlers Directives (GPTBot, Claude, Perplexity, DeepSeek)"]
+        D3 --> D4["100% Factual FAQPage Schema Verification"]
+    end
+
+    subgraph Phase5["Phase 5: Portfolio Realignment & Production Focus"]
+        E1["Prune Placeholder Cards (Clean Showcase)"] --> E2["Focus Exclusively on Live Production SaaS Platforms"]
+        E2 --> E3["Hidden Metadata Integration (Poke nexus, Dashacart, Scale verse, Hittop, Ladoni)"]
+        E3 --> E4["Standardize 5+ Years Experience Across Ecosystem"]
+        E4 --> E5["100% Real Website FAQs & Verified Developer Details"]
+    end
+
+    subgraph Phase6["Phase 6: Enterprise Governance, CI/CD & Automation"]
+        F1["GitHub Actions CI Pipeline (Node 20 Automated Build)"] --> F2["Conventional Commits Standard Enforced"]
+        F2 --> F3["MIT Open Source License & Security Policy"]
+        F3 --> F4["Interactive Conventional github.bat Push Tool"]
+        F4 --> F5["Continuous Production Mainline (mdkworks.netlify.app)"]
+    end
+
+    Phase1 --> Phase2
+    Phase2 --> Phase3
+    Phase3 --> Phase4
+    Phase4 --> Phase5
+    Phase5 --> Phase6
+```
+
 ---
 
 ## 2. Directory Structure

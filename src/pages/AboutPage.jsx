@@ -46,8 +46,8 @@ const AboutPage = () => {
                         </div>
                         <div className="btn-group-row">
                             <a 
-                                href="/MDK.apk" 
-                                download="MDK.apk" 
+                                href="/Zyphuel.apk" 
+                                download="Zyphuel.apk" 
                                 className="btn btn-outline"
                             >
                                 <i className="ri-android-line" style={{ marginRight: '6px' }}></i>
@@ -64,7 +64,7 @@ const AboutPage = () => {
                     <li>
                         <StatsCard 
                             icon="https://i.postimg.cc/x1TWtf69/stats-card-icon-1.png"
-                            value="12+"
+                            value="5+"
                             labelKey="stats_exp"
                         />
                     </li>
@@ -72,9 +72,9 @@ const AboutPage = () => {
                     <li>
                         <StatsCard 
                             icon="https://i.postimg.cc/q7ByNYBb/stats-card-icon-2.png"
-                            value="230+"
+                            value="130+"
                             labelKey="stats_projects"
-                            link="/portfolio"
+                            link="https://workmdk.netlify.app/"
                             arrow={true}
                         />
                     </li>
@@ -82,7 +82,7 @@ const AboutPage = () => {
                     <li>
                         <StatsCard 
                             icon="https://i.postimg.cc/hj6d3tL6/stats-card-icon-3.png"
-                            value="95+"
+                            value="20+"
                             labelKey="stats_clients"
                         />
                     </li>

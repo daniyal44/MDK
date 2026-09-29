@@ -2,10 +2,10 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-  <!-- 1. Home Page (Zyphuel Petrol Price Pakistan, Cricket Scores, ItxMDK, Muhammad Daniyal) -->
+  <!-- 1. Home Page (Muhammad Daniyal / ItxMDK / Zyphuel / Scale verse Studio) -->
   <url>
     <loc>https://mdkworks.netlify.app/</loc>
-    <lastmod>2026-08-28</lastmod>
+    <lastmod>2026-09-29</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://mdkworks.netlify.app/"/>
@@ -17,20 +17,20 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mdkworks.netlify.app/"/>
     <image:image>
       <image:loc>https://i.postimg.cc/5yBQ2pZR/MDK.png</image:loc>
-      <image:title>Muhammad Daniyal (ItxMDK / Zyphuel) - Senior Full Stack Web &amp; App Developer Lahore</image:title>
-      <image:caption>Official Portfolio of Muhammad Daniyal (Zyphuel, Zphuel, Zfaul, zafuel, zaifuel, ziphuel, zyphra, ItxMDK) - Petrol price in Pakistan, Asia cup cricket, Poke nexus, Dashacart, Hittop, Scale verse, Ladoni</image:caption>
+      <image:title>Muhammad Daniyal (ItxMDK / Zyphuel) - Senior Full Stack Web Developer &amp; UI/UX Designer Lahore</image:title>
+      <image:caption>Official Portfolio of Muhammad Daniyal (Zyphuel, ItxMDK) - Scale verse Studio, Poke nexus, Dashacart, Hittop, Ladoni</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://i.postimg.cc/zDFwVm0R/a_3d_render_of_a_sleek_logo_displaying_t_WRu_g5NXRt6KYp_FGOq_b_Lw_16RSYne_RDW8XD5oo3lm_JA.jpg</image:loc>
-      <image:title>Zyphuel Petrol &amp; Fuel Price Checker in Pakistan Logo</image:title>
-      <image:caption>Zyphuel, Scale verse &amp; MDK Works Official Studio Icon</image:caption>
+      <image:title>Scale verse Studio &amp; Zyphuel Logo</image:title>
+      <image:caption>Scale verse Studio and MDK Works official studio emblem</image:caption>
     </image:image>
   </url>
 
-  <!-- 2. About Page (Muhammad Daniyal / ItxMDK / Zyphuel Profile & Bio) -->
+  <!-- 2. About Page (Muhammad Daniyal Biography & Experience) -->
   <url>
     <loc>https://mdkworks.netlify.app/about</loc>
-    <lastmod>2026-08-28</lastmod>
+    <lastmod>2026-09-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://mdkworks.netlify.app/about"/>
@@ -40,14 +40,14 @@
     <image:image>
       <image:loc>https://i.postimg.cc/vBkwZ6W2/Generated-Image-December-11-2025-11-08PM.png</image:loc>
       <image:title>Muhammad Daniyal (ItxMDK / Zyphuel) Senior Software Engineer Lahore</image:title>
-      <image:caption>Muhammad Daniyal - 12+ Years Experience building Zyphuel Fuel App, Poke nexus, Dashacart, Hittop, Scale verse, Ladoni</image:caption>
+      <image:caption>Muhammad Daniyal - 5+ Years Experience building Zyphuel Fuel App, Poke nexus, Dashacart, Hittop, Scale verse, Ladoni</image:caption>
     </image:image>
   </url>
 
-  <!-- 3. Skills Page (React, Mobile App Developer, Node.js) -->
+  <!-- 3. Skills Page (React, Node.js, Mobile App & UI/UX Stack) -->
   <url>
     <loc>https://mdkworks.netlify.app/skills</loc>
-    <lastmod>2026-08-28</lastmod>
+    <lastmod>2026-09-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://mdkworks.netlify.app/skills"/>
@@ -56,12 +56,12 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mdkworks.netlify.app/skills"/>
   </url>
 
-  <!-- 4. Portfolio Page (Zyphuel Petrol Price, Poke nexus Cricket, Dashacart, Hittop, Scale verse, Ladoni) -->
+  <!-- 4. Portfolio Page (Zyphuel, Poke nexus, Dashacart, Scale verse, Hittop, Ladoni) -->
   <url>
     <loc>https://mdkworks.netlify.app/portfolio</loc>
-    <lastmod>2026-08-28</lastmod>
+    <lastmod>2026-09-29</lastmod>
     <changefreq>daily</changefreq>
-    <priority>0.95</priority>
+    <priority>0.98</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://mdkworks.netlify.app/portfolio"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://mdkworks.netlify.app/portfolio?lang=es"/>
     <xhtml:link rel="alternate" hreflang="ur" href="https://mdkworks.netlify.app/portfolio?lang=ur"/>
@@ -69,26 +69,26 @@
     <image:image>
       <image:loc>https://mdkworks.netlify.app/zyphuel_preview.jpg</image:loc>
       <image:title>Zyphuel - Petrol Price in Pakistan &amp; Fuel Delivery App</image:title>
-      <image:caption>Zyphuel, Poke nexus, Dashacart, Hittop, Scale verse, Ladoni apps by Muhammad Daniyal (ItxMDK)</image:caption>
+      <image:caption>Flagship web platforms: Zyphuel, Poke nexus, Dashacart, Scale verse Studio, Hittop, Ladoni</image:caption>
     </image:image>
   </url>
 
-  <!-- 5. Location Page (Lahore Web Developer Studio Map) -->
+  <!-- 5. Location Page (Studio Location in Green Town, Lahore) -->
   <url>
     <loc>https://mdkworks.netlify.app/location</loc>
-    <lastmod>2026-08-28</lastmod>
+    <lastmod>2026-09-29</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.95</priority>
+    <priority>0.92</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://mdkworks.netlify.app/location"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://mdkworks.netlify.app/location?lang=es"/>
     <xhtml:link rel="alternate" hreflang="ur" href="https://mdkworks.netlify.app/location?lang=ur"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mdkworks.netlify.app/location"/>
   </url>
 
-  <!-- 6. Contact Page (Hire Lahore Web & App Developer) -->
+  <!-- 6. Contact Page (Hire Senior Full Stack Developer in Lahore) -->
   <url>
     <loc>https://mdkworks.netlify.app/contact</loc>
-    <lastmod>2026-08-28</lastmod>
+    <lastmod>2026-09-29</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.95</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://mdkworks.netlify.app/contact"/>

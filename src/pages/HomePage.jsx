@@ -37,8 +37,8 @@ const HomePage = () => {
                         <Link to="/contact" className="btn btn-primary">{t('hero_btn')}</Link>
                         <Link to="/portfolio" className="btn btn-outline">{t('about_btn_work')}</Link>
                         <a 
-                            href="/MDK.apk" 
-                            download="MDK.apk" 
+                            href="/Zyphuel.apk" 
+                            download="Zyphuel.apk" 
                             className="btn btn-secondary"
                             title="Download Android APK"
                         >
@@ -120,7 +120,7 @@ const HomePage = () => {
                     <li>
                         <StatsCard 
                             icon="https://i.postimg.cc/x1TWtf69/stats-card-icon-1.png"
-                            value="12+"
+                            value="5+"
                             labelKey="stats_exp"
                         />
                     </li>
@@ -128,9 +128,9 @@ const HomePage = () => {
                     <li>
                         <StatsCard 
                             icon="https://i.postimg.cc/q7ByNYBb/stats-card-icon-2.png"
-                            value="230+"
+                            value="130+"
                             labelKey="stats_projects"
-                            link="/portfolio"
+                            link="https://workmdk.netlify.app/"
                             arrow={true}
                         />
                     </li>
@@ -138,7 +138,7 @@ const HomePage = () => {
                     <li>
                         <StatsCard 
                             icon="https://i.postimg.cc/hj6d3tL6/stats-card-icon-3.png"
-                            value="95+"
+                            value="20+"
                             labelKey="stats_clients"
                         />
                     </li>
@@ -165,8 +165,8 @@ const HomePage = () => {
                             </div>
                             <p className="explore-card-desc">Senior Full Stack Developer & UI/UX Product Designer creating scalable web applications and intuitive interfaces.</p>
                             <div className="explore-card-list">
-                                <div className="explore-card-list-item"><i className="ri-checkbox-circle-fill"></i> 12+ Years Industry Experience</div>
-                                <div className="explore-card-list-item"><i className="ri-checkbox-circle-fill"></i> 230+ Delivered Web Projects</div>
+                                <div className="explore-card-list-item"><i className="ri-checkbox-circle-fill"></i> 5+ Years Industry Experience</div>
+                                <div className="explore-card-list-item"><i className="ri-checkbox-circle-fill"></i> 130+ Delivered Web Projects</div>
                                 <div className="explore-card-list-item"><i className="ri-checkbox-circle-fill"></i> Custom Web App & SaaS Specialist</div>
                             </div>
                         </div>
@@ -279,23 +279,30 @@ const HomePage = () => {
 
                 <div className="faq-list">
                     <div className="faq-item">
-                        <h3 className="faq-question"><i className="ri-question-fill"></i> Where can I check petrol price in Pakistan, diesel & fuel rates?</h3>
-                        <p className="faq-answer">You can track daily petrol price in Pakistan, diesel, gas, and oil rates in real-time through <strong>Zyphuel</strong> (created by Muhammad Daniyal / ItxMDK), Pakistan's smart fuel price checker and on-demand delivery app.</p>
+                        <h3 className="faq-question"><i className="ri-question-fill"></i> {t('faq_q1')}</h3>
+                        <p className="faq-answer">{t('faq_a1')}</p>
                     </div>
 
                     <div className="faq-item">
-                        <h3 className="faq-question"><i className="ri-question-fill"></i> Who is Muhammad Daniyal (ItxMDK / Zyphuel / zphuel / itxmtk)?</h3>
-                        <p className="faq-answer">Muhammad Daniyal (also known online as Zyphuel, zphuel, ItxMDK, itxmtk, MuhammadDaniel, itsmdk, itx dk, itxM, itcM) is a Senior Full Stack Web Developer & App Developer with 12+ years experience in Lahore, Pakistan. He is the founder of Scale verse and creator of high-scale commercial platforms including Zyphuel, Poke nexus, Dashacart, Hittop, and Ladoni.</p>
+                        <h3 className="faq-question"><i className="ri-question-fill"></i> {t('faq_q2')}</h3>
+                        <p className="faq-answer">{t('faq_a2')}</p>
                     </div>
 
                     <div className="faq-item">
-                        <h3 className="faq-question"><i className="ri-question-fill"></i> What platforms were created by Zyphuel & ItxMDK (Muhammad Daniyal)?</h3>
-                        <p className="faq-answer">Zyphuel & ItxMDK engineered notable web platforms including <strong>Zyphuel</strong> (fuel price checker & delivery app), <strong>Poke nexus</strong> (live cricket matches, Asia Cup, T20 World Cup & league scoring engine), <strong>Dashacart</strong> (SaaS e-commerce platform), <strong>Hittop</strong> (global news & trends portal), <strong>Scale verse</strong>, and <strong>Ladoni</strong>.</p>
+                        <h3 className="faq-question"><i className="ri-question-fill"></i> {t('faq_q3')}</h3>
+                        <p className="faq-answer">{t('faq_a3')}</p>
                     </div>
 
                     <div className="faq-item">
-                        <h3 className="faq-question"><i className="ri-question-fill"></i> How can I hire Muhammad Daniyal (ItxMDK) for web development or UI/UX in Lahore?</h3>
-                        <p className="faq-answer">You can contact Muhammad Daniyal (ItxMDK / Zyphuel) directly via WhatsApp at +923230112464, email at m.daniyalkhan490@gmail.com, or through the contact form at <Link to="/contact" title="Contact Muhammad Daniyal (ItxMDK / Zyphuel)">Contact Page</Link>. Studio Location: Green Town, Lahore, Pakistan.</p>
+                        <h3 className="faq-question"><i className="ri-question-fill"></i> {t('faq_q4')}</h3>
+                        <p className="faq-answer">{t('faq_a4')}</p>
+                    </div>
+
+                    <div className="faq-item">
+                        <h3 className="faq-question"><i className="ri-question-fill"></i> {t('faq_q5')}</h3>
+                        <p className="faq-answer">
+                            {t('faq_a5')} <Link to="/contact" title="Contact Muhammad Daniyal">{t('nav_contact')}</Link>.
+                        </p>
                     </div>
                 </div>
             </section>

@@ -4,6 +4,22 @@ All notable changes, bug fixes, architecture improvements, and SEO enhancements 
 
 ---
 
+## [2.2.0] - 2026-09-30
+
+### 🎯 Portfolio & Experience Realignment
+- **Portfolio Curation:** Pruned placeholder cards and streamlined portfolio showcase exclusively to verified, live production applications (**Zyphuel** and **Resume Builder SaaS**).
+- **Hidden Schema & SEO Architecture:** Encapsulated ecosystem application entities (`Poke nexus`, `Dashacart`, `Scale verse Studio`, `Hittop`, `Ladoni`) within semantic schema.org JSON-LD and web manifests, keeping public UI clean while retaining maximum SEO topical authority.
+- **Experience Harmonization:** Standardized experience across HomePage stats cards, AboutPage, translations (EN, ES, UR), and metadata to strictly **5+ years**.
+- **100% Factual Website FAQs:** Rewrote all frequently asked questions and JSON-LD `FAQPage` entities to provide 100% accurate, verified details on developer identity, production platforms, technology stack, and engineering services.
+
+### 🌐 International Repository Standards & GitHub Actions CI
+- **Comprehensive Documentation:** Created world-class `README.md` with dynamic badges, live architecture maps, and technology stack breakdown.
+- **Continuous Integration (CI):** Implemented `.github/workflows/ci.yml` running Node.js 20 build verification on all pushes and pull requests.
+- **Open Source Governance:** Added standard `LICENSE` (MIT), `CONTRIBUTING.md` (Conventional Commits standards), `SECURITY.md`, and GitHub issue/PR templates.
+- **Smart Git Commit Automation:** Upgraded `github.bat` with Conventional Commits prompting and semantic change detection, eliminating generic timestamp commits.
+
+---
+
 ## [2.1.0] - 2026-09-29
 
 ### 🚀 Major SEO, AEO & GEO Architecture Upgrade
